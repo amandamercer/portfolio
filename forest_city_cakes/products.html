@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest City Cakes</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <h1 class="hide">Forest City Cakes Products</h1>
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      <!-- Close Button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <!-- Mobile Menu -->
+      <ul class="vertical menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="wholesale.html">WHOLESALE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Nav Bar Content -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+        <button type="button" data-open="offCanvasLeft" class="menuBut"><img src="images/menu_icon.svg" alt="Menu Button"></button>
+        <div class="title-bar-title"><a href="index.html"><img src="images/nav_logo.svg" id="mobLogo" alt="Logo" class="hide"></a></div>
+          <ul class="socialNavMob float-right">
+            <li><a href="#"><img src="images/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+      </div>
+    </div>
+
+      <!-- Desktop Menu -->
+      <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+        <nav class="top-bar-left float-center scrollNav">
+         <h3 class="hide">Desktop Navigation</h3>
+          <ul class="dropdown menu float-center" data-dropdown-menu>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="index.html"><img src="images/nav_logo.svg" id="deskLogo" alt="Logo" class="float-center"></a></li>
+            <li><a href="">WHOLESALE</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+          <ul class="socialNavMain float-right">
+            <li><a href="#"><img src="images/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+      </div>
+
+      <!-- Product Information Section -->
+      <section class="row" id="prodInfo">
+        <div class="small-9 medium-5 large-4 columns float-left end">
+          <ul class="gfArea">
+            <li><img src="images/badge.png" alt="Vegan & Gluten Free Badge" class="gfBadge"></li>
+            <li><p>Vegan & Gluten Free</p></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-12 large-12 columns float-center end prodTitle">
+          <h2>Our Products</h2>
+        </div>
+        <div class="small-12 medium-4 large-2 large-offset-2 columns cupcakeInfo">
+          <ul class="flavTItle">
+            <li><img src="images/cupcake_icon.png" alt="Cupcake Icon" class="cupcakeIcon"></li>
+            <li><h3>Cupcakes</h3></li>
+          </ul>
+          <img src="images/cupcake_placeholder.jpg" alt="Cupcake Image">
+          <p>Minimum order: One dozen per flavour.<br><br><br></p>
+          <h4>$30/dozen</h4>
+          <ul class="gfArea">
+            <li><img src="images/badge.png" alt="Vegan & Gluten Free Badge" class="gfBadge"></li>
+            <li><h4>$40/dozen</h4></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 large-2 large-offset-1 columns cupcakeInfo">
+          <ul class="flavTItle">
+            <li><img src="images/jarcake_icon.png" alt="Jar Cake Icon" class="jarcakeIcon"></li>
+            <li><h3>Jar Cakes</h3></li>
+          </ul>
+          <img src="images/jarcake_placeholder.jpg" alt="Jar Cake Image">
+          <p>Minimum order: Half a dozen per flavour.<br><br><br></p>
+          <h4>$48/half dozen</h4>
+          <ul class="gfArea">
+            <li><img src="images/badge.png" alt="Vegan & Gluten Free Badge" class="gfBadge"></li>
+            <li><h4>Available</h4></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 large-2 large-offset-1 columns end cupcakeInfo">
+          <ul class="flavTItle">
+            <li><img src="images/cake_icon.png" alt="Cake Icon" class="cakeIcon"></li>
+            <li><h3>Cakes</h3></li>
+          </ul>
+          <img src="images/cake_placeholder.jpg" alt="Cake Image">
+          <p>For more information about custom cakes & prices, check out our</p>
+          <a href="contact.html" class="button" id="faqBut">FAQ</a><br>
+          <ul class="gfArea">
+            <li><img src="images/badge.png" alt="Vegan & Gluten Free Badge" class="gfBadge"></li>
+            <li><h4>Available</h4></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-12 large-12 columns float-center filterSec">
+          <h5>Filters</h5>
+          <form name="filterForm" action="products.html" method="POST">
+            <ul class="filterOpts">
+              <li><input type="radio" name="filter" value="1" checked="" id="allFilter" /><br><label for="allFilter">All</label></li>
+              <li><input type="radio" name="filter" value="2" id="classFil" /><br><label for="classFil">Classics</label></li>
+              <li><input type="radio" name="filter" value="3" id="springFil" /><br><label for="springFil">Spring/Summer</label></li>
+              <li><input type="radio" name="filter" value="4" id="fallFil" /><br><label for="fallFil">Fall/Winter</label></li>
+          </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- Classic Flavours Section -->
+      <section class="row">
+        <div class="small-12 large-12 columns float-center flavours">
+          <ul class="availFlav">
+            <li><h2>Classics</h2></li>
+            <li><p>All flavours available in </p></li>
+            <li><img src="images/cupcake_icon.png" alt="Cupcake Icon"></li>
+            <li><img src="images/jarcake_icon.png" alt="Jar Cake Icon"></li>
+            <li><img src="images/cake_icon.png" alt="Cake Icon"></li>
+          </ul>
+          <div class="flavsSec">
+            <div class="small-12 medium-5 large-5 large-offset-1 columns float-center classFlav">
+              <h4>Chocolate</h4>
+              <p>Chocolate cake, chocolate frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns float-center classFlav">
+              <h4>Vanilla</h4>
+              <p>Vanilla cake, vanilla frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns float-center classFlav">
+              <h4>Caramel</h4>
+              <p>Vanilla cake, caramel frosting, caramel drizzle.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns float-center classFlav">
+              <h4>Cookies and Cream</h4>
+              <p>Oreo cookie baked into chocolate cake, with cookie crumble frosting.</p>
+            </div>
+          </div>
+          <div class="small-12 large-12 columns moreArrow">
+            <img src="images/down_arrow.png" alt="More Arrow" class="float-center">
+          </div>
+        </div>
+      </section>
+
+      <!-- Spring/Summer Flavours Section -->
+      <section class="row">
+        <div class="small-12 large-12 columns float-center flavours">
+          <ul class="availFlav">
+            <li><h2>Spring/Summer</h2></li>
+            <li><p>All flavours available in </p></li>
+            <li><img src="images/cupcake_icon_blue.png" alt="Cupcake Icon"></li>
+            <li><img src="images/jarcake_icon_blue.png" alt="Jar Cake Icon"></li>
+            <li><img src="images/cake_icon_blue.png" alt="Cake Icon"></li><br>
+          <li><p>Only available May to August.</p></li>
+          </ul>
+          <div class="flavsSec">
+            <div class="small-12 medium-5 large-5 large-offset-1 columns springFlav">
+              <h4>Chocolate Sundae</h4>
+              <p>Chocolate cake, vanilla frosting, chocolate ganache.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns springFlav">
+              <h4>Peanut Butter and Jam</h4>
+              <p>Vanilla cake, strawberry jam center, peanut butter frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns springFlav">
+              <h4>Tequila Sunrise</h4>
+              <p>Vanilla tequila cake, orange grenadine tequila frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns springFlav">
+              <h4>Pink Lemonade</h4>
+              <p>Vanilla cake, pink lemonade frosting.</p>
+            </div>
+          </div>
+          <div class="small-12 large-12 columns moreArrow">
+            <img src="images/down_arrow.png" alt="More Arrow" class="float-center">
+          </div>
+        </div>
+      </section>
+
+      <!-- Fall/Winter Flavours Section -->
+      <section class="row">
+        <div class="small-12 large-12 columns float-center flavours">
+          <ul class="availFlav">
+            <li><h2>Fall/Winter</h2></li>
+            <li><p>All flavours available in </p></li>
+            <li><img src="images/cupcake_icon_grey.png" alt="Cupcake Icon"></li>
+            <li><img src="images/jarcake_icon_grey.png" alt="Jar Cake Icon"></li>
+            <li><img src="images/cake_icon_grey.png" alt="Cake Icon"></li><br>
+          <li><p>Only available September to January.</p></li>
+          </ul>
+          <div class="flavsSec">
+            <div class="small-12 medium-5 large-5 large-offset-1 columns fallFlav">
+              <h4>Chai Latte</h4>
+              <p>Chai spice cake, chai spice frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns fallFlav">
+              <h4>Chocolate Beetroot</h4>
+              <p>Chocolate beetroot cake, cinnamon cream cheese frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns fallFlav">
+              <h4>Pumpkin Spice</h4>
+              <p>Pumpkin spice cake, cream cheese frosting.</p>
+            </div>
+            <div class="small-12 medium-5 large-5 large-offset-1 columns fallFlav">
+              <h4>Gingerbread</h4>
+              <p>Gingerbread cake, cream cheese frosting.</p>
+            </div>
+          </div>
+          <div class="small-12 large-12 columns moreArrow">
+            <img src="images/down_arrow.png" alt="More Arrow" class="float-center">
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="row">
+        <div class="small-12 medium-12 large-12 columns float-center">
+          <a href="index.html"><img src="images/hero_logo.svg" alt="Logo" id="footerLogo"></a>
+        </div>
+        <nav class="small-12 medium-12 large-12 columns float-center footNav">
+         <h3 class="hide">Footer Navigation</h3>
+          <ul id="footNav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="wholesale.html">WHOLESALE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="small-12 medium-12 large-12 columns float-center copyright">
+          <p>© FOREST CITY CAKES 2017</p>
+        </div>
+      </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
