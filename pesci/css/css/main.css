@@ -1,0 +1,464 @@
+@font-face {
+  font-family: 'latomedium_italic';
+  src: url("../fonts/lato-mediumitalic-webfont.eot");
+  src: url("../fonts/lato-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/lato-mediumitalic-webfont.woff") format("woff"), url("../fonts/lato-mediumitalic-webfont.ttf") format("truetype"), url("../fonts/lato-mediumitalic-webfont.svg#latomedium_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-regular-webfont.eot");
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+::selection {
+  background: #82d4ed; }
+
+::-moz-selection {
+  background: #82d4ed; }
+
+body {
+  font-size: 10px;
+  padding-top: 0px;
+  background: #000; }
+
+.row {
+  margin: 0 0 0 0; }
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0; }
+
+.col-md-12 {
+  padding-right: 0px; }
+
+.navbar-default {
+  background-color: RGBA(255, 255, 255, 0.8);
+  border-bottom: 2px solid #82d4ed; }
+
+.navbar-nav li a {
+  font-size: 1.1em; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+.navbar-toggle {
+  background-color: #82d4ed;
+  border: none; }
+
+#mobileLogo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+#navbarLogo {
+  width: 20px; }
+
+#logo {
+  width: 260px;
+  height: 300px;
+  margin: 0 auto;
+  float: right;
+  margin-top: 100px;
+  margin-right: -200px; }
+
+.wide {
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 1px);
+  background-size: cover; }
+
+.wide img {
+  width: 100%; }
+
+.boxHelper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  border: 1px solid #ddd; }
+
+#section1 {
+  background-image: url("../images/fishing.jpg");
+  height: 764px; }
+
+#triangle {
+  margin: 0 auto;
+  z-index: 20;
+  float: right;
+  margin-top: 610px;
+  width: 400px; }
+
+.bmenu {
+  padding: 0px;
+  margin: 100px 0 10px 100px;
+  position: relative; }
+
+.bmenu li {
+  font-size: 50px;
+  display: block;
+  font-family: 'latoregular', Arial, sans-serif;
+  font-size: 28pt; }
+
+.bmenu li a {
+  color: transparent;
+  display: block;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 6px #fff;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none; }
+
+.bmenu:hover li a {
+  text-shadow: 0px 0px 7px #7d7d7f; }
+
+.bmenu li a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 1px #fff;
+  padding-left: 10px; }
+
+#reelSection {
+  background-color: #f9fafc;
+  margin: 0px 0 0 0;
+  padding: 0px 0 20px 0; }
+
+#reelDescSection h2 {
+  font-family: 'latoregular', arial, sans-serif;
+  font-size: 3em;
+  color: #838386;
+  padding: 0;
+  margin: 20px 0 0 0;
+  text-align: center; }
+
+#reelDescSection h3 {
+  font-family: 'latoregular', arial, sans-serif;
+  font-size: 3em;
+  color: #838386;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+
+#reelDescSection h4 {
+  font-family: 'latoregular', arial, serif;
+  font-size: 2em;
+  color: #838386;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+
+#reelDescSection p {
+  font-family: 'latoregular', arial, serif;
+  font-size: 1em;
+  color: #000;
+  padding: 15px 0 0 0;
+  margin: 0;
+  text-align: center; }
+
+#reelDescSection h1 {
+  font-family: 'latoregular', arial, serif;
+  font-size: 3em;
+  color: #82d4ed;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: center; }
+
+#stars {
+  height: 50px;
+  display: block;
+  margin: 0 auto; }
+
+#reelDesc {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #c3c3c3; }
+
+.btn-primary {
+  background-color: #82d4ed;
+  border: 1px solid #bfe7f6;
+  display: block;
+  margin: 0 auto; }
+
+#infoSection {
+  background-image: none;
+  background-color: #363636;
+  padding: 20px 0px; }
+
+#infoSection p {
+  font-family: 'latoregular', arial, serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px; }
+
+#localDistSection {
+  background-color: #bfe7f6;
+  padding: 40px 0px; }
+
+#localDistSection h1 {
+  font-family: 'latoregular', arial, serif;
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+#localDistLogos {
+  background-color: #fff;
+  padding: 40px 0px; }
+
+#localDistLogos img {
+  max-width: 175px;
+  display: block;
+  margin: 0 auto;
+  transition: .4s ease-in-out all; }
+  #localDistLogos img:hover {
+    opacity: .5; }
+
+#photoSection {
+  background-color: #58585a;
+  padding: 40px 0px; }
+
+#photoSection h1 {
+  font-family: 'latoregular', arial, serif;
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0px 0px 35px 0px; }
+
+#brakingSystemSection {
+  background-image: none;
+  background-color: #363636;
+  padding: 20px 0px; }
+
+#brakingSystemSection p {
+  font-family: 'latoregular', arial, serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px; }
+
+#contactSection {
+  padding: 40px 0px;
+  background-color: #82d4ed; }
+
+#contactSection h3 {
+  font-family: 'latoregular', arial, serif;
+  font-size: 2em;
+  color: #fff;
+  text-align: center; }
+
+#contactSection p {
+  font-family: 'latoregular', arial, serif;
+  font-size: 1em;
+  color: #fff;
+  text-align: center; }
+
+form {
+  margin: 0 auto;
+  width: 80%; }
+
+input, textarea {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #fff; }
+
+label {
+  font-family: 'latoregular', arial, serif;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 15px 0px 0px 0px;
+  cursor: default; }
+
+input, textarea {
+  width: 100%;
+  background: #efefef;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #3a3a3a; }
+
+#submit {
+  width: 200px;
+  height: 40px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'latoregular', arial, serif;
+  background-color: #2590b1;
+  transition: .3s all ease-in-out;
+  float: right;
+  color: #bfe7f6; }
+  #submit:hover {
+    background-color: #bfe7f6;
+    color: #2590b1; }
+
+#mainFooter {
+  background-color: #58585a;
+  padding: 30px 0px; }
+
+#mainFooter h2 {
+  font-family: 'latoregular', arial, serif;
+  font-size: 2em;
+  color: #fff;
+  padding: 30px 0 10px 0;
+  margin: 0; }
+
+#mainFooter p {
+  font-family: 'latoregular', arial, serif;
+  font-size: 1em;
+  color: #fff; }
+
+#mainFooter span {
+  color: #82d4ed; }
+
+#mainFooter img {
+  max-width: 50px;
+  padding: 8px;
+  transition: .3s ease-in-out all; }
+  #mainFooter img:hover {
+    opacity: .5;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    margin-bottom: 3px; }
+
+@media screen and (min-width: 23.125em) {
+  #mobileLogo {
+    width: 200px; } }
+@media screen and (min-width: 62em) {
+  #reelDescSection {
+    margin-top: -110px;
+    padding-top: 0;
+  }
+
+  #reelDescSection h2 {
+    text-align: left;
+    padding-left: 40px;
+
+  }
+
+  #reelDescSection h3 {
+    text-align: left;
+    padding-left: 40px;
+
+  }
+
+  #reelDescSection h4 {
+    text-align: left;
+    padding-left: 40px;
+
+  }
+
+  #reelDescSection h2 {
+    font-family: 'latoregular', arial, serif;
+    font-size: 3em;
+    color: #838386;
+    padding: 0 0 0 40px;
+    margin: 0;
+  }
+
+  #reelDescSection p {
+    text-align: left;
+    padding-left: 41px;
+  }
+
+  #reelDescSection h1 {
+    text-align: left;
+    margin: 0;
+    padding-left: 40px;
+
+  }
+
+  #stars {
+    display: inline;
+    padding-left: 25px;
+  }
+
+  #infoSection {
+    background-image: url("../images/guy_with_fishing_pole.jpg");
+    padding: 20px 0px;
+  }
+
+  #infoSection p {
+    font-family: 'latoregular', arial, serif;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: right;
+    padding: 30px 40px 250px 0px;
+  width: 400px;
+  float: right;
+  margin-top: -140px;
+  }
+
+#photoSection {
+  margin-bottom: 90px;  
+}
+
+  #brakingSystemSection {
+    background-image: url("../images/fishing_banks.jpg");
+    padding: 20px 0px;
+  }
+
+  #brakingSystemSection p {
+    font-family: 'latoregular', arial, serif;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+    padding: 30px 0px 250px 40px;
+  width: 400px;
+  margin-top: -130px;
+  }
+
+  #mainFooter h2 {
+    font-family: 'latoregular', arial, serif;
+    font-size: 2em;
+    color: #fff;
+    padding: 0px 0 10px 0;
+    margin: 0;
+  }
+
+  .btn-primary {
+    background-color: #82d4ed;
+    border: 1px solid #bfe7f6;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  #reelDesc {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: none;
+  }
+
+  #contactSection {
+    font-size: 1.2em;
+  }
+
+  #contactSection h3 {
+    margin-top: -80px;
+  }
+
+  #submit {
+    font-size: 1.2em;
+  }
+
+  #mainFooter p {
+    font-size: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
