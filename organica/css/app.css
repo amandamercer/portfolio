@@ -1,0 +1,570 @@
+body
+{
+	font-family: 'ralewaymedium', Arial, sans-serif;
+	color: #fff;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+}
+
+body a
+{
+	color: #fff;
+}
+
+body a:hover
+{
+	color: #bbc1a4;
+}
+
+#mainHeader
+{
+	background-color: #000;
+	opacity: 0.8;
+	width: 100%;
+	z-index: 9999;
+	position: fixed;
+}
+
+.title-bar
+{
+	background: #000;
+	padding-right: 0rem;
+	opacity: 0.8;
+}
+
+.menu-icon::after
+{
+	background: #fff;
+	box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+}
+
+.menu-icon:hover::after
+{
+	background: #666;
+	box-shadow: 0 7px 0 #666, 0 14px 0 #666;
+}
+
+#organicaLogo
+{
+	display: block;
+	margin: 0 auto 10px auto;
+	max-width: 80%;
+}
+
+.title-bar .menu-icon
+{
+	margin-right: .5rem;
+}
+
+#mobileNav
+{
+	list-style: none;
+	text-align: center;
+	margin: 0; 
+	padding: 0;
+}
+
+#mobileNav li a
+{
+	display: block;
+	color: #fff;
+	background-color: #000;
+	opacity: 0.8;
+	padding: 5px;
+	border-bottom: solid 1px #666;
+}
+
+#mobileNav li a:hover
+{
+	color: #000;
+	background-color: #fff;
+}
+
+#headerImg
+{
+	padding: 0;
+	margin: 0;
+}
+
+#hambImg
+{
+	width: 100%;
+	height: auto;
+}
+
+#aboutUs
+{
+	padding: 0;
+	margin: 0;
+}
+
+#storyImg
+{
+	left: 0;
+	width: 100%;
+}
+
+#storyText
+{
+	background-color: #bbc1a4;
+	padding: 10px 10px 0 10px;
+
+}
+
+#aboutFood
+{
+	padding: 0;
+	margin: 0;
+}
+
+#foodImg
+{
+	left: 0;
+	width: 100%;
+}
+
+#foodText
+{
+	background-color: #afaa99;
+	padding: 10px 10px 0 10px;
+
+}
+
+#menuSect
+{
+	background-image: url('../images/pizza_background.jpg');
+	background-repeat: no-repeat;
+}
+
+#menuTitle
+{
+	font-family: 'lobster_1.3regular', "Times New Roman", serif;
+	color: #fff;
+	font-size: 40px;
+	padding-top: 20px;
+}
+
+.menuItems
+{
+	display: inline-block;
+}
+
+#menuIcons img
+{
+	padding: 5px;
+	max-width: 10%;
+}
+
+.tabs
+{
+	background-color: transparent;
+	border: none;
+	padding-top: 40px;
+}
+
+ul.tabs
+{
+    text-align: center;
+}
+
+ul.tabs li
+{
+    float: none !important;
+    display: inline-block;
+}
+
+.tabs a
+{
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: 'ralewaybold', Arial, sans-serif;
+	padding: 10px 10px 2px 10px;
+}
+
+.tabs a:hover
+{
+	background-color: transparent;
+	color: #5c8d46;
+	border-bottom: solid 1px #5c8d46;
+}
+
+.tabs-content
+{
+	background-color: transparent;
+	border: none;
+}
+
+.tabs-panel
+{
+	background-color: transparent;
+}
+
+.tabs-panel img
+{
+	border: solid 5px rgba(255, 255, 255, .1);
+	border-radius: 2%;
+}
+
+.tabs-panel h3
+{
+	color: #5c8d46;
+	margin: 0;
+	padding: 0;
+	font-family: 'ralewaymedium', Arial, sans-serif;
+}
+
+.tabs-panel p
+{
+	font-size: 13px;
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+#ourChefs
+{
+	background-color: #ffeecf;
+}
+
+#ourChefs h2
+{
+	font-family: 'lobster_1.3regular', "Times New Roman", serif;
+	color: #5f7951;
+	font-size: 40px;
+	padding: 20px 0 20px 0;
+}
+
+#ourChefs img
+{
+	border: solid 6px #ffeecf;
+	border-radius: 1.5%;
+}
+
+.allmina
+{
+	background-color: #8f957c;
+	padding-top: 20px;
+}
+
+.maria
+{
+	background-color: #afaa99;
+	padding-top: 20px;
+}
+
+#ourChefs h3
+{
+	color: #5a5649;
+	font-family: 'ralewaybold', Arial, sans-serif;
+	font-size: 24px;
+	padding-top: 20px;
+}
+
+#upcomingEvents
+{
+	padding: 0;
+	margin: 0;
+}
+
+#restImg
+{
+	width: 100%;
+	height: auto;
+}
+
+#eventsSect
+{
+	background-color: #d9d5c5;
+}
+
+#greenLogo
+{
+	margin: 20px 0 30px 0;
+}
+
+#eventsSect h3
+{
+	color: #757a64;
+	font-family: 'ralewaybold', Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+#eventsSect h4
+{
+	color: #fff;
+	font-family: 'ralewaybold', Arial, sans-serif;
+	padding-bottom: 10px;
+}
+
+#contactForm
+{
+	background-color: #757a64;
+}
+
+#contactForm h2
+{
+	font-family: 'lobster_1.3regular', "Times New Roman", serif;
+	color: #fff;
+	font-size: 40px;
+	padding-top: 20px;
+}
+
+#conForm
+{
+	padding-bottom: 20px;
+}
+
+#socialMed
+{
+	background-image: url('../images/footer_background.jpg');
+	background-repeat: no-repeat;
+	padding: 20px 0 20px 0;
+	background-position: center;
+}
+
+#iconNav
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#iconNav li
+{
+	width: 77px;
+	height: 77px;
+	margin-right: 10px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#iconNav a
+{
+	height: 77px;
+	width: 77px;
+	float: left;
+}
+
+#googleplus
+{
+	background: url(../images/google_plus.png) no-repeat 0 0;
+}
+
+#googleplus a:hover
+{
+	background: url(../images/google_plus.png) no-repeat 0 -76px;
+}
+
+#facebook
+{
+	background: url(../images/facebook.png) no-repeat 0 0;
+}
+
+#facebook a:hover
+{
+	background: url(../images/facebook.png) no-repeat 0 -76px;
+}
+
+#twitter
+{
+	background: url(../images/twitter.png) no-repeat 0 0;
+}
+
+#twitter a:hover
+{
+	background: url(../images/twitter.png) no-repeat 0 -76px;
+}
+
+#instagram
+{
+	background: url(../images/instagram.png) no-repeat 0 0;
+}
+
+#instagram a:hover
+{
+	background: url(../images/instagram.png) no-repeat 0 -76px;
+}
+
+#footerInfo
+{
+	background-color: #5c8d46;
+	padding-top: 15px;
+}
+
+@media screen and (min-width: 40em) {
+
+	#mainHeader
+	{
+		min-width: 100%;
+	}
+
+	#logoCon
+	{
+		margin: 0 auto;
+		padding-bottom: 10px;
+		padding-right:  10px;
+	}
+
+	#organicaLogo
+	{
+		margin: 0 auto;
+		max-width: 40%;
+	}
+
+	nav
+	{
+		margin-top: 10px;
+	}
+
+	#mobileNav
+	{
+		text-align: center;
+		margin: 0;
+		padding-bottom: 10px;
+	}
+
+	#mobileNav li
+	{
+		display: inline;
+	}
+
+	#mobileNav li a
+	{
+		display: inline;
+		border-bottom: none;
+		color: #fff;
+		margin-right: 19px;
+		background-color: transparent;
+		opacity: 1;
+	}
+
+	#mobileNav li:nth-child(3)
+	{
+		padding-right: 115px;
+	}
+
+	#headerImg
+	{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	#hambImg
+	{
+		width: 100%;
+		height: auto;
+		min-width: 100%;
+	}
+
+	#aboutUs
+	{
+		float: left;
+		display: inline-block;
+	}
+	#storyText
+	{
+		float: right;
+		display: inline-block;
+	}
+
+	#aboutFood
+	{
+		float: right;
+		display: inline-block;
+	}
+
+	#foodText
+	{
+		float: left;
+		display: inline-block;
+	}
+
+	#menuSect p
+	{
+		padding: 0 40px 0 40px;
+	}
+	
+	.menuCont
+	{
+		max-width: 350px;
+		margin: 0 auto;
+		float: left;
+	}
+
+	#menuBigContainer
+	{
+		padding-bottom: 40px;
+	}
+
+	#logoDiv
+	{
+		float: left;
+		margin: 0 auto;
+		padding-left: 90px;
+		padding-top: 30px;
+	}
+
+	#greenLogo
+	{
+		float: left;
+		min-width: 70%;
+	}
+
+	#eventsSect h3
+	{
+		padding-top:  10px;
+	}
+
+	#contactForm
+	{
+		background-image: url('../images/map.jpg');
+		padding: 80px;
+		background-repeat: no-repeat;
+	}
+
+	#formDiv
+	{
+		background-color: #757a64;
+		border-radius: 1%;
+	}
+
+	footer
+	{
+		min-width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
