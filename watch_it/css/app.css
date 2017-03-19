@@ -1,0 +1,618 @@
+h2
+{
+	font-family: 'Hind', sans-serif;
+	font-size: 20px;
+	color: #383c45;
+	text-align: center;
+	padding-top: 15px;
+}
+
+body
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	color: #c0c0c0;
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	outline: 0;
+	transition: all .2s linear;
+}
+
+.top-bar
+{
+	background: none;
+	text-align: center;
+	z-index: 150;
+}
+
+.top-bar.expanded .title-area
+{
+	background: none;
+	z-index: 150;	
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after 
+{
+	box-shadow: 0 0 0 2px #383c45, 0 7px 0 2px #383c45, 0 14px 0 2px #383c45;	
+}
+
+#mobileNav li a 
+{
+	display: block;
+	color: #383c45;
+	padding: 5px 0 5px;
+	background-color: #fff;
+}
+
+#mobileNav li
+{
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#mobileNav li:first-child
+{
+	border-top: 1px solid #c0c0c0;
+}
+
+#mobileNav li:last-child
+{
+	margin-bottom: 50px;
+}
+
+#mobileNav
+{
+	margin: 0 auto;
+}
+
+#logo
+{
+	z-index: 150;
+	margin-top: -50px;
+	margin-left: -30px;
+	max-width: 80%;
+}
+
+#headerImg
+{
+	padding: 0;
+	margin-top: -90px;
+	z-index: -150;
+}
+
+#dwWatch
+{
+	width: 100%;
+	height: auto;
+}
+
+#medImgSec
+{
+	padding: 0;
+	margin: 0;
+}
+
+#watchModel
+{
+	width: 100%;
+	height: auto;
+}
+
+.seperator
+{
+	padding-bottom: 20px;
+}
+
+button
+{
+	border: 1px solid #c0c0c0;
+	background-color: #fff;
+	color: #383c45;
+	padding: 5px;
+	font-size: 13px;
+}
+
+button:hover
+{
+	background-color: #fff;
+	color: #383c45;
+}
+
+#promoSec
+{
+	background-color: #f2f2f2;
+	margin-top: 25px;
+	padding-bottom: 15px;
+}
+
+#mainWatch
+{
+	max-width: 70%;
+}
+
+.colour
+{
+	width: 10%;
+	margin-top: 15px;
+}
+
+.prodInd
+{
+	background-color: #f2f2f2;
+	border-right:  0.5px solid #383c45;
+	border-bottom:  0.5px solid #383c45;
+}
+
+.prodInd p
+{
+	margin: 20px 0 -25px 0;
+}
+
+#guessSec
+{
+	padding: 0;
+	margin: 0;
+}
+
+#dividerImg
+{
+	width: 100%;
+	height: auto;
+}
+
+#guessTitle
+{
+	color: #fff;
+	margin-top: -160px;
+}
+
+#mysubmit
+{
+	background-color: #fff;
+	border: 1px solid #c0c0c0;
+	padding:  0 20px 0 20px;
+}
+
+form
+{
+	margin-bottom: 60px;
+}
+
+#logoBot
+{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+#botLogo
+{
+	margin:  0 auto;
+}
+
+#footerCon
+{
+	background-color: #383c45;
+	padding-top: 20px;
+	padding-bottom: 3px;
+}
+
+#footerNav ul
+{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+#footerNav ul li
+{
+	padding-bottom: 10px;
+}
+
+#footerNav ul li a
+{
+	color:  #fff;
+}
+
+#footerNav ul li a:hover
+{
+	color: #fff;
+}
+
+@media screen and (min-width:37.25em)
+{
+
+	#logo
+	{
+		z-index: 100;
+		max-width: 70%;
+	}
+
+	#headerImg
+	{
+		padding: 0;
+		margin-top: -100px;
+		z-index: -150;
+	}
+
+	#classicPar
+	{
+		padding: 0;
+		margin: 0;
+	}
+
+}
+
+@media screen and (min-width:40.063em)
+{
+
+	#logo
+	{
+		max-width: 50%;
+		margin: 20px 0 0 -100px;
+	}
+
+	#mainNav
+	{
+		float: right;
+		margin:  -60px 10px 0 0;
+	}
+
+	#mainNav ul
+	{
+		list-style: none;
+		padding-bottom: 10px;
+	}
+
+	#mainNav ul li
+	{
+		padding-bottom: 10px;
+		display: inline;
+	}
+
+	#mainNav ul li a
+	{
+		color:  #383c45;
+	}
+
+	#mainNav ul li a:hover
+	{
+		color: #383c45;
+	}
+
+	#headerImg
+	{
+		margin-top: -150px;
+		z-index: -100;
+	}
+
+	#classicTitle
+	{
+		color: #fff;
+		margin-top: -130px;
+	}
+
+	#mainWatch
+	{
+		max-width: 40%;
+	}
+
+	#productSec
+	{
+		width: 100%;
+		margin-top: 0;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	#behindProd
+	{
+		width: 100%;
+		margin-top: 0;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+		background-color: #383c45;
+		min-height: 100%;
+		float: left;
+	}
+
+	#prodEncased
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.prodInd
+	{
+		border-right:  0.5px solid #383c45;
+		border-bottom:  0.5px solid #383c45;
+	}
+
+	#guessFeature
+	{
+		width: 100%;
+		margin-top: 0;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	#guessSec
+	{
+		width: 100%;
+		margin-top: 0;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	#dividerImg
+	{
+		width: 100%;
+		margin-top: 0;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	#guessTitle
+	{
+		color: #fff;
+		margin-top: -250px;
+	}
+
+	#guessPar
+	{
+		padding-bottom: 150px;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#footerCon
+	{
+		min-height: 80px;
+	}
+
+	#footerNav
+	{
+		float: left;
+	}
+
+	#footerNav ul
+	{
+		list-style: none;
+		padding-bottom: 10px;
+	}
+
+	#footerNav ul li
+	{
+		padding-bottom: 10px;
+		display: inline;
+	}
+
+	#footerNav ul li a
+	{
+		color:  #fff;
+	}
+
+	#copyright
+	{
+		float: right;
+		padding-right: 25px;
+	}
+
+}
+
+@media screen and (min-width:56.188em)
+{
+
+	#section1
+	{
+		width: 100%;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	#promoSec
+	{
+		background-color: #f2f2f2;
+		width: 100%;
+		margin-top: 0;
+   		margin-left: auto;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	#classicTitle
+	{
+		margin-top: -200px;
+	}
+
+	#classicPar
+	{
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#mainWatch
+	{
+		max-width: 25%;
+	}
+
+	.colour
+	{
+		width: 5%;
+	}
+
+	#footerNav ul li
+	{
+		padding-right: 25px;
+	}
+
+}
+
+@media screen and (min-width:64.063em)
+{
+
+	#logo
+	{
+		max-width: 120%;
+		margin: 20px 0 0 60px;
+	}
+
+	#mainNav
+	{
+		float: right;
+		margin: -90px -100px 0 0;
+	}
+
+	#mainNav ul
+	{
+		list-style: none;
+		padding-bottom: 10px;
+	}
+
+	#mainNav ul li
+	{
+		padding-bottom: 10px;
+		display: inline;
+	}
+
+	#mainNav ul li a
+	{
+		color:  #383c45;
+		padding: 0 20px 0 20px;
+	}
+
+	#mainNav ul li a:hover
+	{
+		color: #fff;
+	}
+
+	#headerImg
+	{
+		margin-top: -170px;
+		z-index: -100;
+	}
+
+	#classicTitle
+	{
+		margin-top: -280px;
+	}
+
+	#classicPar
+	{
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 80px;
+	}
+
+	#section1
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: initial;
+	}
+
+	#medImgSec
+	{
+		width: 50%;
+		height: auto;
+		display: inline;
+		float: left;
+	}
+
+	#watchModel
+	{
+		width: 100%;
+		height: auto;
+		display: inline;
+		float: left;
+	}
+
+	#medText
+	{
+		width: 50%;
+		height: auto;
+		display: inline;
+		float: right;
+		vertical-align: middle;
+		padding-top: 90px;
+		background-color: #fff;
+	}
+
+	#medTextp
+	{
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+
+	button:hover
+	{
+		background-color: #383c45;
+		color: #fff;
+	}
+
+	#promoSec
+	{
+		background-color: #f2f2f2;
+		width: 100%;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: initial;
+	}
+
+	#mainWatch
+	{
+		max-width: 25%;
+	}
+
+	.colour
+	{
+		width: 5%;
+	}
+
+	.colour:hover
+	{
+		transition: width 0.2s ease;
+		width: 4.5%;
+	}
+
+	#prodEncased
+	{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.prodInd:hover
+	{
+		background-color: #fff;
+	}
+
+	#guessTitle
+	{
+		margin-top: -340px;
+	}
+
+	#guessPar
+	{
+		padding-bottom: 250px;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	#footerNav ul li a:hover
+	{
+		color: #c0c0c0;
+	}
+
+}
