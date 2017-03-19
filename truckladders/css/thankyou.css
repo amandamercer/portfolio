@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* Global */
+
+
+/* ======================================================================*/
+
+body {
+    color: #3d3d3d;
+    font-family: 'Poppins', sans-serif;
+}
+
+section h2 {
+    background: none;
+    color: #1A1A17;
+    left: 0;
+    width: 100%;
+    font-size: 4.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 50px 0 0 0;
+    letter-spacing: 2px;
+}
+
+#orderConf {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    color: #1A1A17;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#mainTitle {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.checkIcon {
+    max-width: 25%;
+    margin-top: 0;
+}
+
+#homeLink {
+    text-align: center;
+    margin: 0 auto;
+}

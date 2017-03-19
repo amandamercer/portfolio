@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* Global */
+
+/* ======================================================================*/
+
+.main {
+   margin-top: 80px;
+   padding: 20px;
+}
+
+#stepBar {
+    margin-top: -100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 100px 0 200px 0;
+}
+
+.price, .specs {
+    min-width: 250px;
+}
+
+/* Progressbar */
+
+/* ======================================================================*/
+
+#stepBar {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#progressbar {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    counter-reset: step;
+    /*to add numbers*/
+}
+
+#progressbar li {
+    color: #2b2a27;
+    float: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    list-style-type: none;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    width: 20%;
+}
+
+#progressbar li::before {
+    background: #2b2a27 none repeat scroll 0% 0%;
+    color: #ffffff;
+    content: counter(step, decimal);
+    counter-increment: step;
+    display: block;
+    font-size: 1em;
+    line-height: 22px;
+    margin: 0px auto 5px auto;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#progressbar li::after {
+    background-color: #2b2a27;
+    content: "";
+    height: 2px;
+    left: -50%;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+#progressbar li.active {}
+
+#progressbar li.active:before {
+    background: #981007;
+}
+
+#progressbar li.active + li:after {
+    background: #981007;
+}
+
+
+/* Form */
+
+/* ======================================================================*/
+
+fieldset {
+    display: none;
+    width: 400px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+#first {
+    display: block;
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 320px) {
+    fieldset {
+        width: 300px;
+        margin-left: -5px;
+    }
+    #first {
+        width: 300px;
+        margin-left: -5px;
+    }
+}
+
+select {
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    color: #fff;
+}
+
+select:not(:checked) {
+    background-color: #981007;
+    color: #fff;
+}
+
+option:not(:checked) {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* Order Form */
+
+/* ======================================================================*/
+
+h2,
+h3 {
+    font-family: 'Norwester', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  h2 { font-size: 2.3125rem; 
+  }
+}
+
+.tltle {
+    margin-top: 10px;
+}
+
+#orderType form {
+    padding: 0 25px;
+}
+
+input[type="button"] {
+    background-color: #2b2a27;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Norwester", sans-serif;
+    font-size: 1em;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+input[type="submit"] {
+    background-color: #981007;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    font-family: "Norwester", sans-serif;
+    font-size: 1em;
+    padding: 15px;
+    text-transform: uppercase;
+    width: 100px;
+    margin-top: 20px;
+}
+
+option[type="text"] {
+    background-color: #3CBC8D;
+    color: white;
+}
+
+#extraOpt {
+    display: none;
+}
+
+#optionRadio ul {
+    width: 280px;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+#optionRadio li {
+    list-style: none;
+    overflow: hidden;
+    padding: 0px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+#result {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-left: inherit;
+}
+
+.red {
+    color: #981007;
+}
+
+.creditInfo {
+    font-size: 0.9em;
+    float: right;
+    margin-top: 10px;
+}
+
+#dealer {
+    display: none;
+}
+
+
+/* Summary Info with Picture */
+
+/* ======================================================================*/
+
+.samplePic {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dealerTitle {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+.preview {
+    text-align: left;
+    margin-top: 10px;
+    width: 150px;
+}
+
+@media screen and (max-width: 1920px) {
+    #optionRadio ul {
+        width: 280px;
+        font-size: 1em;
+        margin: 0 auto;
+        float: left;
+    }
+    #optionRadio li {
+        list-style: none;
+        overflow: hidden;
+        padding: 25px;
+        display: inline;
+        text-transform: uppercase;
+    }
+    #result {
+        text-align: left;
+    }
+    #fifth {
+        width: 800px;
+    }
+    #fifth > .samplePic {
+        float: left;
+        margin-right: 30px;
+    }
+    .preview {
+        text-align: left;
+        width: 150px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #fifth {
+        width: 400px;
+    }
+    #fifth >.samplePic {
+        float: none;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    #optTail label {
+        width: 118px;
+    }
+    #optionRadio ul {
+        width: 280px;
+        margin: 0 auto;
+    }
+    #optionRadio li {
+        list-style: none;
+        overflow: hidden;
+        padding: 0px;
+        display: inline;
+        font-size: 1em;
+    }
+    #fifth {
+        width: 320px;
+        margin-left: -30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    #result {
+        margin-left: 13px;
+    }
+   
+    .inputLast input[type="text"] {
+        width: 90%;
+        margin-left: 11px;
+    }
+    .inputLast label {
+        margin-left: 11px;
+    }
+    .dealerTitle {
+        margin-left: 11px;
+    }
+    #indivdlOpt {
+        margin-left: 11px;
+    }
+    .preview {
+        padding-left: 0px;
+        width: 150px;
+    }
+
+    #pre_btn4 {
+        margin-left: 11px;
+    }
+    .submit_btn {
+        margin-right: 19px;
+    }
+    .creditInfo {
+        margin-right: 19px;
+    }
+}
+
+
+/* extra Option */
+
+/* ======================================================================*/
+
+label input {
+    vertical-align: top;
+    float: left;
+    width: 230px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#mdfRdio {
+    margin-left: 0px;
+}
+
+#optionRadio label {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.method {
+    display: inline-block;
+}
+
+.method input,
+.method label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#orderOptions input[type="radio"] {
+    margin: 15px 2px;
+}
+
+#optBed {
+    padding-left: 0px;
+    height: 75px;
+}
+
+#optTail {
+    height: 75px;
+    margin-left: 0px;
+    padding-right: 0px;
+}
+
+@media only screen and (min-width: 64em) {
+    .large-12 {
+        width: 50%;
+    }
+    .inputLast input[type="text"] {
+        margin: 0px;
+        width: 45%;
+    }
+    .preview {
+        width: 150px;
+    }
+    .samplePic {
+        margin-bottom: 145px
+    }
+
+}
+/* ======================================================================*/
