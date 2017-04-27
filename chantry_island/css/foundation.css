@@ -3043,9 +3043,13 @@ select {
 .orbit-caption {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
   margin-bottom: 0;
-  padding: 1rem;
+  padding: 0.1rem;
   background-color: rgba(10, 10, 10, 0.5);
   color: #fefefe; }
 

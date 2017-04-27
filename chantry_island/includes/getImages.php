@@ -9,9 +9,9 @@
 
 	$mysqli->set_charset("utf8");
 
-	$image = $_GET["gallery_name"];
+	$image = $_GET["gallery_id"];
 
-	$myQuery = "SELECT * FROM tbl_gallery WHERE gallery_name='$image'";
+	$myQuery = "SELECT * FROM tbl_gallery WHERE gallery_id='$image'";
 
 	$result = mysqli_query($mysqli, $myQuery);
 

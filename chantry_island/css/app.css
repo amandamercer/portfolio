@@ -278,12 +278,16 @@ button.menu-icon {
 	color: #fff;
 }
 
+footer#footerSec.row {
+	min-width: 100%;
+}
+
 #footerSec {
 	background-color: #303030;
 	text-align: center;
 	color: #fff;
 	padding: 0;
-	width: 100%;
+	min-width: 100%;
 }
 
 #footerSec div {
@@ -419,7 +423,7 @@ button.menu-icon {
 	#example-animated-menu.top-bar {
 		max-width: 100%;
 		background-color: #303030;
-		padding: 5px 10px 5px 30px;
+		padding: 5px 25px 5px 30px;
 	}
 
 	.top-bar-left {
@@ -450,6 +454,7 @@ button.menu-icon {
 		line-height: 50px;
 		margin: 0;
 		padding: 0;
+		font-size: larger;
 	}
 
 	ul.dropdown.menu li {
@@ -552,7 +557,7 @@ button.menu-icon {
 		clear: both;
 		flex-direction: column;
 		text-align: center;
-	}	
+	}
 
 	#footerPad {
 		display: flex;
@@ -628,7 +633,12 @@ button.menu-icon {
 	}
 
 	#conForm form {
-		padding-top: 40px;
+		padding-top: 0px;
+	}
+
+	#conForm h5
+	{
+		 margin-top: 20px;
 	}
 
 	#copyright p {
@@ -643,11 +653,7 @@ button.menu-icon {
 @media screen and (min-width: 64.063em) {
 
 	#example-animated-menu.top-bar {
-		padding: 5px 20px 5px 150px;
-	}
-
-	#signinDesk {
-		margin-left: 100px;
+		padding: 5px 150px 5px 150px;
 	}
 
 	#headerSec {
@@ -767,7 +773,7 @@ button.menu-icon {
 
 	#conForm input[type="text"], #conForm input[type="email"], #conForm input[name="message"] {
 		width: 100%;
-	} 
+	}
 
 }
 
@@ -793,6 +799,9 @@ button.menu-icon {
 .aboutHead h2 {
 	color: #fff;
 }
+.aboutVid {
+	width: 100%;
+}
 
 .aboutBlurb {
 	padding: 20px 20px 10px 20px;
@@ -804,11 +813,13 @@ button.menu-icon {
 
 .tabs-title > a {
 	color: #48728a;
+	font-size: small;
 }
 
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
     background: #cccccc;
     color: #fff;
+		font-size: small;
 }
 
 .tabs-content {
@@ -999,11 +1010,11 @@ button.menu-icon {
 
 #beforeSec h3 {
 	text-align: center;
-	color: #fff;
+	color: #4f4324;
 }
 
 #beforeSec p {
-	color: #fff;
+	color: #4f4324;
 }
 
 #beforeSec img {
@@ -1027,7 +1038,7 @@ button.menu-icon {
 
 #partnersSec {
 	background-color: #cccccc;
-	color: #fff;
+	color: #3f3f3f;
 	text-align: center;
 	padding-top: 20px;
 	margin-top: 20px;
@@ -1099,6 +1110,11 @@ button.menu-icon {
 
 /* Mobile Size */
 
+#volSec div {
+	height: 310px;
+	margin-bottom: 30px;
+}
+
 #volSec h4 {
 	text-transform: uppercase;
 	color: #48728a;
@@ -1123,6 +1139,11 @@ button.menu-icon {
 /* Tablet Size */
 
 @media screen and (min-width: 40em) {
+
+	#volSec div {
+		height: 270px;
+		margin-bottom: 0;
+	}
 
 	#volSec {
 		padding: 20px 100px 20px 100px;
@@ -1161,7 +1182,7 @@ button.menu-icon {
 
 #bookTour {
 	background-color: #e7d3a0;
-	color: #fff;
+	color: #4f4324;
 	padding: 20px;
 	text-align: left;
 	float: none;
@@ -1236,7 +1257,7 @@ button.menu-icon {
 
 #bookTour2 {
 	background-color: #e7d3a0;
-	color: #fff;
+	color: #4f4324;
 	padding: 20px;
 	text-align: left;
 	max-width: 280px;
@@ -1342,7 +1363,7 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 		float: right;
 		margin: 0;
 		text-align: left;
-	}	
+	}
 
 }
 
@@ -1357,7 +1378,7 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 
 #galSec {
 	background-color: #e7d3a0;
-	padding-top: 20px;
+	padding: 20px;
 }
 
 #galSec img {
@@ -1371,6 +1392,11 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 #socialBlurb p {
 	font-family: 'MyriadPro-It', sans-serif;
 	color: #48728a;
+	font-size: large;
+}
+
+ul.orbit-container li {
+	height: 410px;
 }
 
 #photo-viewer {
@@ -1385,9 +1411,10 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 #photo-viewer img {
 	margin: 0 auto;
 	display: block;
-	max-height: 350px;
 	padding-bottom: 0;
-} 
+	width: auto;
+	height: 410px;
+}
 
 .desc-text  {
 	margin: 0 auto;
@@ -1415,7 +1442,7 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 @media screen and (min-width: 64.063em) {
 
 	#galSec {
-		padding: 40px 100px 20px 100px;
+		padding: 40px 100px 40px 100px;
 		min-width: 100%;
 	}
 
@@ -1442,7 +1469,7 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 
 #mailAdd {
 	background-color: #e7d3a0;
-	color: #fff;
+	color: #4f4324;
 	padding: 20px;
 	text-align: left;
 	max-width: 280px;
@@ -1458,6 +1485,11 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 	color: #fff;
 	padding: 20px;
 	text-align: center;
+}
+
+#donorList
+{
+	color: #3f3f3f;
 }
 
 #donorSec img {
@@ -1552,7 +1584,7 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 
 #bookTour3 {
 	background-color: #e7d3a0;
-	color: #fff;
+	color: #4f4324;
 	padding: 20px;
 	text-align: left;
 	max-width: 280px;
@@ -1566,13 +1598,13 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 }
 
 .map-wrapper {
-	width: 100%; 
+	width: 100%;
 	height: 350px;
 	display: block;
 	margin: 0 auto;
 }
 
-.preload-wrapper { 
+.preload-wrapper {
 	position: absolute;
 	width: 70%;
 	height: 350px;
@@ -1613,7 +1645,7 @@ td.tg-s6z2.row1, td.tg-s6z2.row3, td.tg-s6z2.row5, td.tg-s6z2.row7 {
 	text-align: center;
 }
 
-input[type="text"], input[type="email"], textarea[name="message"] {
+input[type="text"], input[type="email"], input[type="tel"], textarea[name="message"] {
 	border: none;
 	box-shadow: none;
 	background-color: #f0f0f0;
@@ -1626,15 +1658,15 @@ input[type="text"], input[type="email"], textarea[name="message"] {
 }
 
 :-moz-placeholder {
-   color: #000;  
+   color: #000;
 }
 
 ::-moz-placeholder {
-   color: #000;  
+   color: #000;
 }
 
-:-ms-input-placeholder {  
-   color: #000;  
+:-ms-input-placeholder {
+   color: #000;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea[name="message"]:focus {
@@ -1738,7 +1770,7 @@ input[type="submit"]:hover {
 		padding: 0 150px 0 150px;
 	}
 
-	input[type="text"], input[type="email"], textarea[name="message"] {
+	input[type="text"], input[type="email"], input[type="tel"], textarea[name="message"] {
 		width: 99.3%;
 	}
 
@@ -1773,6 +1805,11 @@ input[type="submit"]:hover {
 
 #signinSec {
 	padding: 20px;
+}
+
+.errorMsg {
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 #signinSec input[type="text"], #signinSec input[type="password"] {
@@ -1868,6 +1905,10 @@ input[type="submit"] {
 
 #newsStories p {
 	text-align: left;
+}
+
+#newsStories img {
+	padding: 20px 0 20px 0;
 }
 
 /* Tablet Size */

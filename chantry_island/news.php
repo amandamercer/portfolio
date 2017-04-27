@@ -1,5 +1,17 @@
 <?php
-  require_once("includes/header.html");
+  require_once("admin/phpscripts/init.php");
+
+  ini_set('display_errors',1);
+  error_reporting(E_ALL);
+
+  $type = 1;
+  $popForm = getNews($type);
+  $tbl = "tbl_news";
+  $col = "news_type";
+  $id = 1;
+  $news = dynamicNews($tbl, $col, $id);
+
+  require_once("includes/header.php");
 ?>
 
       <!-- Header section -->
@@ -17,69 +29,22 @@
       <div class="row" id="newsStories">
         <div class="small-12 medium-12 large-12 columns" id="featured">
           <h3>Latest News</h3>
-          <div class="small-12 medium-6 large-6 columns">
-            <img src="images/news/1.jpg" alt="News Image">
-          </div>
-          <div class="small-12 medium-6 large-6 columns">
-            <h4>Doug Johnson Proudly Displays the Famous Saying</h4>
-            <h5>Date: 2017-01-18</h5>
-            <p>"Don't give up the ship."</p>
-          </div>
         </div>
         <div class="small-12 medium-12 large-12 columns">
-          <div class="small-12 medium-3 large-3 columns">
-            <img src="images/news/2.jpg" alt="News Image">
-          </div>
-          <div class="small-12 medium-3 large-3 columns">
-            <h4>Doug Johnsons 91st Birthday</h4>
-            <h5>Date: 2017-01-10</h5>
-            <p>Doug Johnson is giving a short talk about his history with the Propeller Club. He is one of our strongest supporters.</p>
-          </div>
-          <div class="small-12 medium-3 large-3 columns">
-            <img src="images/news/3.jpg" alt="News Image">
-          </div>
-          <div class="small-12 medium-3 large-3 columns">
-            <h4>Chantry Island Tour Base</h4>
-            <h5>Date: 2016-12-02</h5>
-            <p>The Peerless II outside the Boathouse in southampton. Photo courtesy Eric Rogers.</p>
-          </div>
-        </div>
-        <div class="small-12 medium-12 large-12 columns">
-          <div class="small-12 medium-3 large-3 columns">
-            <img src="images/news/4.jpg" alt="News Image">
-          </div>
-          <div class="small-12 medium-3 large-3 columns">
-            <h4>Southampton Christmas Parade</h4>
-            <h5>Date: 2017-01-10</h5>
-            <p>Doug Johnson is giving a short talk about his history with the Propeller Club. He is one of our strongest supporters.</p>
-          </div>
-          <div class="small-12 medium-3 large-3 columns">
-            <img src="images/news/5.jpg" alt="News Image">
-          </div>
-          <div class="small-12 medium-3 large-3 columns">
-            <h4>Southampton Christmas Parade</h4>
-            <h5>Date: 2016-12-02</h5>
-            <p>The Marine Heritage Society and Propeller Club Float or I mean boat was well received Friday Night at the annual Christmas Parade. Towing the Boat was a Saugeen Shores Fire pick up truck driven by Phil Eagleson our Fire Chief.</p>
-          </div>
+            <?php
+              while($row = mysqli_fetch_array($news)) {
+                echo "<div class=\"small-12 medium-6 medium-offset-3 large-6 large-offset-3 columns end\">";
+                echo "<img src=\"images/news/{$row['news_image']}\" alt=\"{$row['news_title']}\">";
+                echo "<h4>{$row['news_title']}</h4>";
+                echo "<h5>{$row['news_date']}</h5>";
+                echo "<p>{$row['news_content']}</p>";
+                echo "</div>";
+              }
+            ?>
         </div>
       </div>
 
-      <div class="row" id="pagination">
-        <div class="small-12 medium-12 large-12 columns">
-          <ul class="pagination">
-            <li class="arrow unavailable"><a href="">&laquo;</a></li>
-            <li class="current"><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li class="unavailable"><a href="">&hellip;</a></li>
-            <li><a href="">12</a></li>
-            <li><a href="">13</a></li>
-            <li class="arrow"><a href="">&raquo;</a></li>
-          </ul>
-        </div>
-      </div>
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>

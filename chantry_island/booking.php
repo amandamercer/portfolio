@@ -1,5 +1,14 @@
 <?php
-  require_once("includes/header.html");
+  require_once("admin/phpscripts/init.php");
+
+  ini_set('display_errors',1);
+  error_reporting(E_ALL);
+
+  $popContact = getContact();
+
+  $popBooking = getBooking();
+
+  require_once("includes/header.php");
 ?>
 
       <!-- Header section -->
@@ -15,8 +24,8 @@
           <div class="small-12 small-centered medium-4 large-4 columns" id="bookTour">
             <h3>Book a Tour</h3>
             <p>Pre-book to avoid disappointment.<br>
-            Call: <a href="tel:519-797-5862">519-797-5862</a><br>
-            Toll Free:<a href="tel:1-866-797-5862">1-866-797-5862</a></p>
+            Call: <a href="tel:<?php echo $popContact['contact_phone'] ?>"><?php echo $popContact['contact_phone'] ?></a><br>
+            Toll Free:<a href="tel:<?php echo $popContact['contact_tollphone'] ?>"><?php echo $popContact['contact_tollphone'] ?></a></p>
           </div>
           <div class="small-12 medium-7 large-7 columns" id="arriveSec">
             <h3>When and Where to Arrive</h3>
@@ -30,14 +39,10 @@
           <div class="small-12 medium-7 large-7 columns">
             <h3>Tour Information</h3>
             <p>The tour is much like a medium hike and requires a degree of agility and fitness. You can enjoy the tour without climbing the 106 steps in the Lighthouse tower. However, when you do reach the light room, you will always remember the view.<br><br>
-            For safety, children must be a minimum of 4 feet tall and must be accompanied by an Adult.<br><br>
-            Footwear suitable for hiking is mandatory. For safety reasons, Flip-Flops are not allowed.<br><br><br>
+            For safety, children must be a minimum of 4 feet tall and must be accompanied by an adult.<br><br>
+            Footwear suitable for hiking is mandatory. For safety reasons, flip-flops are not allowed.<br><br><br>
             <b>Also Note:</b><br>
-            - The 2 hour tour must be pre-booked and prepaid.<br>
-            - There are 9 seats on the boat. The cost is $30.00 per person (includes HST).<br>
-            - For refunds, cancellations must be received 24 hours before the scheduled departure.<br>
-            - Chantry Island is a Federal Migratory Bird Sanctuary and No Pets allowed on the island.<br>
-            - Cancellation can be caused by weather conditions but light rain is fine.</p>
+            <?php echo $popBooking['booking_info'] ?></p>
           </div>
           <div class="small-12 medium-5 large-5 columns">
             <img src="images/vicki_tomori/island_3.jpg" alt="After Picture 1" id="afterPic1">
@@ -46,5 +51,5 @@
       </div>     
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>

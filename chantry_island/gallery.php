@@ -1,5 +1,13 @@
 <?php
-  require_once("includes/header.html");
+  require_once("admin/phpscripts/init.php");
+
+  ini_set('display_errors',1);
+  error_reporting(E_ALL);
+
+  $tbl = "tbl_gallery";
+  $images = getAll($tbl);
+
+  require_once("includes/header.php");
 ?>
 
       <!-- Header section -->
@@ -15,49 +23,29 @@
 
       <div class="row" id="galSec">
         <div id="photo-viewer">
-          <img src="images/gallery/aerial_1.jpg" alt="Aerial View" class="gallery-large hidden">
-          <p class="desc-text hidden">Aerial view of the island.</p>
+          <!-- <img src="images/gallery/aerial_1.jpg" alt="Aerial View" class="gallery-large hidden"> -->
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                <?php
+                  while($row=mysqli_fetch_array($images)){
+                      echo "<li class=\"orbit-slide\">";
+                      echo "<img class=\"orbit-image\" src=\"images/gallery/{$row['gallery_image']}\" alt=\"{$row['gallery_credit']}\">";
+                      echo "<figcaption class=\"orbit-caption\"><p class=\"desc-text\">Photo taken by: Karen Smith</p></figcaption>";
+                      echo "</li>";
+                    }
+                  ?>
+              </ul>
+            </div>
+          <!-- <p class="desc-text">Photo taken by: Karen Smith</p> -->
         </div>
         <div id="thumbnails">
-            <img src="images/gallery/aerial_1.jpg" alt="Aerial View" id="aerial_1">
-            <img src="images/gallery/aerial_2.jpg" alt="Aerial View" id="aerial_2">
-            <img src="images/gallery/aerial_3.jpg" alt="Aerial View" id="aerial_3">
-            <img src="images/gallery/aerial_4.jpg" alt="Aerial View" id="aerial_4">
-            <img src="images/gallery/aerial_5.jpg" alt="Aerial View" id="aerial_5">
-            <img src="images/gallery/birds_1.jpg" alt="Birds" id="birds_1">
-            <img src="images/gallery/birds_2.jpg" alt="Birds" id="birds_2">
-            <img src="images/gallery/birds_3.jpg" alt="Birds" id="birds_3">
-            <img src="images/gallery/birds_4.jpg" alt="Birds" id="birds_4">
-            <img src="images/gallery/birds_5.jpg" alt="Birds" id="birds_5">
-            <img src="images/gallery/birds_6.jpg" alt="Birds" id="birds_6">
-            <img src="images/gallery/cottage.jpg" alt="Cottage" id="cottage">
-            <img src="images/gallery/cottage_1.jpg" alt="Cottage" id="cottage_1">
-            <img src="images/gallery/cottage_2.jpg" alt="Cottage" id="cottage_2">
-            <img src="images/gallery/cottage_3.jpg" alt="Cottage" id="cottage_3">
-            <img src="images/gallery/cottage_4.jpg" alt="Cottage" id="cottage_4">
-            <img src="images/gallery/cottage_5.jpg" alt="Cottage" id="cottage_5">
-            <img src="images/gallery/flower.jpg" alt="Flower" id="flower">
-            <img src="images/gallery/island.jpg" alt="Island" id="island">
-            <img src="images/gallery/island_1.jpg" alt="Island" id="island_1">
-            <img src="images/gallery/island_2.jpg" alt="Island" id="island_2">
-            <img src="images/gallery/island_3.jpg" alt="Island" id="island_3">
-            <img src="images/gallery/island_4.jpg" alt="Island" id="island_4">
-            <img src="images/gallery/island_5.jpg" alt="Island" id="island_5">
-            <img src="images/gallery/island_6.jpg" alt="Island" id="island_6">
-            <img src="images/gallery/island_7.jpg" alt="Island" id="island_7">
-            <img src="images/gallery/peerless_1.jpg" alt="Peerless Boat Tour" id="peerless_1">
-            <img src="images/gallery/peerless_2.jpg" alt="Peerless Boat Tour" id="peerless_2">
-            <img src="images/gallery/peerless_3.jpg" alt="Peerless Boat Tour" id="peerless_3">
-            <img src="images/gallery/tour_boat.jpg" alt="Peerless Tour Boat" id="tour_boat"">
-            <img src="images/gallery/sunset_1.jpg" alt="Sunset" id="sunset_1">
-            <img src="images/gallery/sunset_2.jpg" alt="Sunset" id="sunset_2">
-            <img src="images/gallery/sunset_3.jpg" alt="Sunset" id="sunset_3">
-            <img src="images/gallery/tour_base_1.jpg" alt="Tour Base" id="tour_base_1">
-            <img src="images/gallery/tour_base_2.jpg" alt="Tour Base" id="tour_base_2">
-            <img src="images/gallery/tour_base_3.jpg" alt="Tour Base" id="tour_base_3">
-            <img src="images/gallery/tour_base_4.jpg" alt="Tour Base" id="tour_base_4">
-            <img src="images/gallery/tour_base_5.jpg" alt="Tour Base" id="tour_base_5">
-            <img src="images/gallery/tour_base_6.jpg" alt="Tour Base" id="tour_base_6">
+         <!-- <?php
+            while($row=mysqli_fetch_array($images)){
+                echo "<img id=\"{$row['gallery_id']}\" src=\"images/gallery/{$row['gallery_image']}\" alt=\"{$row['gallery_credit']}\">";
+              }
+          ?> -->
         </div>
       </div>
 
@@ -68,5 +56,5 @@
       </div>
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>

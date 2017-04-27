@@ -1,5 +1,5 @@
 <?php
-  require_once("includes/header.html");
+  require_once("includes/header.php");
 ?>
 
       <!-- Header section -->
@@ -56,5 +56,5 @@
       </div>      
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>

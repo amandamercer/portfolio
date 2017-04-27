@@ -1,5 +1,13 @@
 <?php
-  require_once("includes/header.html");
+  require_once("admin/phpscripts/init.php");
+
+  ini_set('display_errors',1);
+  error_reporting(E_ALL);
+
+  $id = 1;
+  $popForm = getHomepage($id);
+
+  require_once("includes/header.php");
 ?>
       <!-- Header section -->
       <header class="row" id="headerSec">
@@ -14,7 +22,7 @@
         <div class="small-12 medium-12 large-12 columns">
           <h2>Marine Heritage Society</h2>
             <img src="images/wheel.svg" alt="Boat wheel" class="wheel">
-            <p>The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The goal of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.<br><br>Among other projects, the Society manages the Chantry Island Light Station under agreements and restrictions from the Canadian Coast Guard and the Canadian Wildlife Service.</p>
+            <p><?php echo $popForm['pages_sectionone'] ?></p>
         </div>
       </div>
 
@@ -22,16 +30,16 @@
       <div class="row" id="gallerySec">
         <div class="small-12 medium-12 large-12 columns">
           <div class="small-6 medium-3 large-3 columns">
-            <a href="gallery.php"><img src="images/boat.jpg" alt="Boat"></a>
+            <a href="gallery.php"><img src="images/george_plant/peerless_3.jpg" alt="Boat"></a>
           </div>
           <div class="small-6 medium-3 large-3 columns">
-            <a href="gallery.php"><img src="images/flower.jpg" alt="Flower"></a>
+            <a href="gallery.php"><img src="images/vicki_tomori/flower.jpg" alt="Flower"></a>
           </div>
           <div class="small-6 medium-3 large-3 columns">
-            <a href="gallery.php"><img src="images/office.jpg" alt="Office"></a>
+            <a href="gallery.php"><img src="images/vicki_tomori/cottage_4.jpg" alt="Office"></a>
           </div>
           <div class="small-6 medium-3 large-3 columns">
-            <a href="gallery.php"><img src="images/boat-tours.jpg" alt="Office Sign"></a>
+            <a href="gallery.php"><img src="images/misc/tour_base_1.JPG" alt="Office Sign"></a>
           </div>
         </div>
       </div>
@@ -41,7 +49,7 @@
         <div class="small-12 medium-12 large-12 columns">
           <h2>Touring Chantry Island</h2>
             <img src="images/wheel.svg" alt="Boat wheel" class="wheel">
-            <p><span id="boatRide">As you take the 15 minute boat ride to the island you will enjoy the outstanding views of the sandy beach shoreline and the deep blue waters of Lake Huron.</span><br><br>During your two hour guided visit on Chantry Island, you have the opportunity to climb to the top of the Imperial Lighthouse for extraordinary views of the island.<br><br>Stroll back in time while visiting the Light Keeper's Cottage as it existed in the late 1800’s, decorated with period furnishings from private donors and the Bruce County Museum and Cultural Centre. You will also see the surrounding gardens and many species of birds.</p>
+            <p><?php echo $popForm['pages_sectiontwo'] ?></p>
         </div>
       </div>
 
@@ -83,5 +91,5 @@
       </div>
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>

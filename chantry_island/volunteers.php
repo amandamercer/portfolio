@@ -1,5 +1,16 @@
 <?php
-  require_once("includes/header.html");
+  require_once("admin/phpscripts/init.php");
+
+  ini_set('display_errors',1);
+  error_reporting(E_ALL);
+
+  $popVol = getVolunteers();
+  $tbl = "tbl_volunteers";
+  $col = "volunteers_id";
+  $id = "volunteers_id";
+  $volunteers = getSingle($tbl, $col, $id);
+
+  require_once("includes/header.php");
 ?>
 
       <!-- Header section -->
@@ -14,73 +25,17 @@
       </div>
 
       <div class="row" id="volSec" align="center">
-        <div class="small-6 medium-6 large-6 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Don Nicholson</h4>
-          <h5>Chairman</h5>
-        </div>
-        <div class="small-6 medium-6 large-6 columns end">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Pat O'Connor</h4>
-          <h5>Vice Chairman</h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>John Rigby</h4>
-          <h5>Treasurer</h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Stan Young</h4>
-          <h5>Secretary</h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Rick Smith</h4>
-          <h5>Past Chairman</h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Ali Kelly</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Jane Kramer</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Vicki Tomori</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Dan Holmes</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-3 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Dave Wenn</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-4 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Ed Braun</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-4 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>John Willetts</h4>
-          <h5><span class="blank">*</span></h5>
-        </div>
-        <div class="small-6 medium-6 large-4 columns">
-          <img src="images/avatar.png" alt="Avatar">
-          <h4>Peter Williamson</h4>
-          <h5>Observer</h5>
-        </div>
+        <?php
+              while($row = mysqli_fetch_array($volunteers)) {
+                echo "<div class=\"small-6 medium-6 large-3 columns end\">";
+                echo "<img src=\"images/volunteers/{$row['volunteers_image']}\" alt=\"{$row['volunteers_name']}\">";
+                echo "<h4>{$row['volunteers_name']}</h4>";
+                echo "<h5>{$row['volunteers_role']}</h5>";
+                echo "</div>";
+              }
+        ?>
       </div>
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>

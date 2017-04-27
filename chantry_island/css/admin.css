@@ -1,0 +1,503 @@
+/* Global Styles */
+
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	src: url('fonts/MyriadPro-Bold.otf');
+	src: local('Myriad Pro Bold'), local('Myriad Pro Bold'), url('fonts/MyriadPro-Bold.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MyriadPro-Semibold';
+	src: url('fonts/MyriadPro-Semibold.otf');
+	src: local('Myriad Pro Semibold'), local('Myriad Pro Semibold'), url('fonts/MyriadPro-Semibold.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MyriadPro-It';
+	src: url('MyriadPro-It.otf');
+	src: local('Myriad Pro Italic'), local('Myriad Pro Italic'), url('fonts/MyriadPro-It.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('MyriadPro-Regular.otf');
+	src: local('Myriad Pro Regular'), local('Myriad Pro Regular'), url('fonts/MyriadPro-Regular.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zapfino';
+	src: url('Zapfino.ttf');
+	src: local('Zapfino'), local('Zapfino'), url('fonts/Zapfino.ttf') format('truetype');
+}
+
+body {
+	background-color: #ebebeb;
+}
+
+h1, h2 {
+	font-family: 'Zapfino', cursive;
+}
+
+h3 {
+	font-family: 'MyriadPro-Bold', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+p {
+	font-family: 'MyriadPro-Regular', sans-serif;
+	text-align: justify;
+	font-size: 0.85em;
+}
+
+a {
+	font-family: 'MyriadPro-Semibold', sans-serif;
+}
+
+
+
+
+
+
+/**************************************************** ADMIN DASHBOARD ********************************************************/
+
+/* Mobile Size */
+
+.adminContainer {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.adminContainer .row {
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	background-color: #ebebeb;
+}
+
+.holder {
+	padding: 80px 15px 10px 170px;
+}
+
+.noSpace {
+	padding: 0;
+	background: none;
+}
+
+.top-bar {
+	background-color: #303030;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+}
+
+.dropdown.menu {
+	background-color: #303030;
+	float: right;
+}
+
+.dropdown.menu li {
+	text-align: center;
+	padding: 0 10px 0 10px;
+	display: inline-block;
+}
+
+.dropdown.menu li img {
+	height: 20px;
+}
+
+.dropdown.menu li a {
+	padding: 5px 0 0 0;
+	color: #fff;
+	font-size: 12px;
+}
+
+ul.dropdown.menu li a:hover {
+	border-bottom: 0;
+}
+
+.logoDiv {
+	background-color: #4b738c;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#dashLogo {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	height: 60px;
+}
+
+a.menuTitle {
+	padding: 10px;
+	color: #4b738c;
+	font-size: 14px;
+}
+
+a.menuTitle:hover {
+	color: #626262;
+}
+
+.dashMenu {
+	background-color: #f0f3f8;
+	float: left;
+	height: 100vh;
+	position: fixed;
+	z-index: 1;
+	padding: 0;
+	width: 150px;
+}
+
+.divider {
+	border-bottom: 1px solid #e9eaef;
+	padding: 5px;
+}
+
+ul.side-nav {
+	margin: 0;
+}
+
+ul.side-nav li {
+	list-style-type: none;
+	font-size: 12px;
+	padding: 2px 0 2px 0;
+	color: #6a6a6a;
+	font-weight: 600;
+	margin: 7px 0 0 7px;
+}
+
+ul.side-nav li a {
+	color: #6a6a6a;
+	margin-left: 20px;
+	padding: 10px 50px 10px 0;
+}
+
+ul.side-nav li:hover {
+	background-color: #4b738c;
+	border-radius: 20px 0 0 20px;
+}
+
+ul.side-nav li a:hover {
+	color: #fff;
+}
+
+.adminGreeting {
+	background-color: #fff; 
+	margin-bottom: 20px;
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.adminGreeting ul {
+	display: inline-block;
+	margin: 0;
+}
+
+.adminGreeting ul li {
+	list-style-type: none;
+}
+
+.adminGreeting img {
+	width: 40px;
+	margin: 20px;
+}
+
+.adminGreeting ul li h3 {
+	color: #4b738c;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.adminGreeting ul li p {
+	font-size: 14px;
+}
+
+.adminHelp {
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.adminHelp ul {
+	display: inline-block;
+	margin: 0;
+}
+
+.adminHelp ul li {
+	list-style-type: none;
+}
+
+.adminHelp img {
+	width: 30px;
+	margin: 20px;
+}
+
+.adminHelp ul li h3 {
+	color: #9a9a9a;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.adminHelp ul li p {
+	font-size: 14px;
+}
+
+.pagesList {
+	background-color: #fff;
+	margin: 0 0 20px 0;
+	padding: 20px;
+	display: inline-block;
+	text-align: left;
+	width: auto;
+}
+
+.pagesList h4 {
+	font-size: 16px;
+	font-family: 'MyriadPro-Bold';
+	color: #626262;
+}
+
+.pagesList ul {
+	margin: 0;
+	text-align: center;
+}
+
+.pagesList ul li {
+	list-style-type: none;
+	display: inline-block;
+	background-color: #ebebeb;
+	margin: 20px;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.pagesList ul li a {
+	padding: 10px 15px 10px 15px;
+	color: #343434;
+	font-size: 14px;
+}
+
+.pagesList ul li:hover {
+	background-color: #4b738c;
+	color: #fff;
+}
+
+.pagesList ul li a:hover {
+	color: #fff;
+}
+
+@media screen and (min-width: 29.625em) /* 474px */ {
+
+	.adminGreeting, .adminHelp {
+		padding: 30px 30px 20px 20px;
+	}
+
+	.adminGreeting img, .adminHelp img {
+		margin: -30px 20px 0 0;
+	}
+
+	.adminGreeting h3, .adminHelp h3 {
+		text-align: left;
+	}
+
+}
+
+/* Tablet Size */
+
+@media screen and (min-width: 40em) {
+	
+	.adminContainer {
+		height: 100%;
+	}
+
+	.adminContainer {
+		height: 100vh;
+	}
+
+	.top-bar-left {
+		float: right;
+	}
+	
+
+}
+
+/* Desktop Size */
+
+@media screen and (min-width: 64.063em) {
+
+	.pagesList ul li {
+		margin: 20px;
+		padding: 10px 35px 10px 35px;
+	}
+
+	.pagesList ul li a {
+		padding: 10px 35px 10px 35px;
+	}
+
+}
+
+
+
+
+
+
+/**************************************************** ADMIN EDIT USER INFO ********************************************************/
+
+/* Mobile Size */
+
+.userForm {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.userForm h3 {
+	color: #4b738c;
+	text-align: center;
+}
+
+.userForm label {
+	font-size: 13px;
+	font-weight: 500;
+	color: #6a6a6a;
+}
+
+.userForm input[type="text"] {
+	font-size: 14px;
+}
+
+input[type="submit"] {
+	float: right;
+	border: none;
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: #48728a;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 900;
+	cursor: pointer;
+	margin: 20px 0 20px 0;
+}
+
+input[type="submit"]:hover {
+	background-color: #6a6a6a;
+}
+
+/* Desktop Size */
+
+@media screen and (min-width: 64.063em) {
+
+	.editUserCon {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+}
+
+
+
+
+
+
+/**************************************************** CMS PAGES STYLING ********************************************************/
+
+/* Mobile Size */
+
+.holder form {
+	margin-top: 40px;
+}
+
+.homeBox {
+	background-color: #fff;
+	margin: 0 0 20px 0;
+	padding: 20px;
+	display: inline-block;
+	text-align: left;
+}
+
+.holder h4 {
+	color: #4b738c;
+	font-family: 'MyriadPro-Bold', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.holder label {
+	color: #6a6a6a;
+}
+
+.holder textarea {
+	height: 200px;
+	border: 1px solid #cacaca;
+	resize: none;
+	font-family: 'MyriadPro-Regular', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px;
+	background-color: #F0F3F8;
+}
+
+#tabsSec div {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: #fff;
+}
+
+.tabs {
+	border: none;
+}
+
+.adminGalImg {
+	height: 350px;
+}
+
+.adminNews {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.adminNews p {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: center;
+}
+
+.adminGalImg img {
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.adminGalImg h4, .adminNews h4 {
+	font-size: 0.9em;
+	text-align: center;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.adminGalImg h5, .adminNews h5 {
+	font-family: 'MyriadPro-Semibold', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+.deleteConBut {
+	text-align: center;
+}
+
+.deleteNewsBut a {
+	margin-bottom: 30px;
+}
+

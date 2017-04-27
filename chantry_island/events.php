@@ -1,5 +1,17 @@
 <?php
-  require_once("includes/header.html");
+  require_once("admin/phpscripts/init.php");
+
+  ini_set('display_errors',1);
+  error_reporting(E_ALL);
+
+  $type = 2;
+  $popForm = getEvents($type);
+  $tbl = "tbl_news";
+  $col = "news_type";
+  $id = 2;
+  $news = dynamicEvents($tbl, $col, $id);
+
+  require_once("includes/header.php");
 ?>
 
       <!-- Header section -->
@@ -16,49 +28,19 @@
 
       <div class="row" id="eventsStories">
         <div class="small-12 medium-12 large-12 columns">
-          <div class="small-12 medium-6 large-3 columns">
-            <img src="images/news/2.jpg" alt="Events Image">
-            <h4>Doug Johnsons 91st Birthday</h4>
-            <h5>Date: 2017-01-10</h5>
-            <p>Doug Johnson is giving a short talk about his history with the Propeller Club. He is one of our strongest supporters.</p>
-          </div>
-          <div class="small-12 medium-6 large-3 columns">
-            <img src="images/news/3.jpg" alt="Events Image">
-            <h4>Marine Heritage Society / Propeller Club AGM 2016</h4>
-            <h5>Date: 2016-09-30</h5>
-            <p>The Annual Marine Heritage Society and Propeller Club AGM will take place on Friday, November 25, 2016. Location will be at the Walker House in Southampton. Roast Beef or Chicken are the choices for food. Tickets will be on sale at the Propeller Club meetings and through Marine Heritage Board members. Continue to check postings for further information.</p>
-          </div>
-          <div class="small-12 medium-6 large-3 columns">
-            <img src="images/news/4.jpg" alt="Events Image">
-            <h4>Christmas Parade Southampton 2016</h4>
-            <h5>Date: 2016-12-02</h5>
-            <p>The Southampton Christmas Parade always takes place on the First Friday in December. We will be preparing the Peerless II for this annual tradition. Decoration and theme will take place in the Southampton Boathouse the week before. Come and join us and get to be a part of a great group of volunteers sailing down High Street.</p>
-          </div>
-          <div class="small-12 medium-6 large-3 columns">
-            <img src="images/news/5.jpg" alt="Events Image">
-            <h4>Island Docks Come Home</h4>
-            <h5>Date: 2016-09-30</h5>
-            <p>Friday September 16, fourteen volunteers and three boats left for the island at 8:30 in the morning. We spent two hours dismantling the metal walkways and craning them up onto the floating dock. The weather was perfect and all went well. If this sounds interesting to you make sure you sign up for the next opportunity by watching these postings.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="pagination">
-        <div class="small-12 medium-12 large-12 columns">
-          <ul class="pagination">
-            <li class="arrow unavailable"><a href="">&laquo;</a></li>
-            <li class="current"><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li class="unavailable"><a href="">&hellip;</a></li>
-            <li><a href="">12</a></li>
-            <li><a href="">13</a></li>
-            <li class="arrow"><a href="">&raquo;</a></li>
-          </ul>
+          <?php
+              while($row = mysqli_fetch_array($news)) {
+                echo "<div class=\"small-12 medium-6 medium-offset-3 large-6 large-offset-3 columns end\">";
+                echo "<img src=\"images/news/{$row['news_image']}\" alt=\"{$row['news_title']}\">";
+                echo "<h4>{$row['news_title']}</h4>";
+                echo "<h5>{$row['news_date']}</h5>";
+                echo "<p>{$row['news_content']}</p>";
+                echo "</div>";
+              }
+            ?>
         </div>
       </div>
 
 <?php
-  require_once("includes/footer.html");
+  require_once("includes/footer.php");
 ?>
