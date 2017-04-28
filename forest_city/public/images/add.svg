@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wholesale-Form" transform="translate(-569.000000, -1836.000000)">
+            <g id="Group-10" transform="translate(569.000000, 1836.000000)">
+                <rect id="Rectangle-10" fill="#F99393" x="0" y="0" width="56" height="56" rx="7"></rect>
+                <path d="M28.24,12 C27.31264,12 26.56,12.75264 26.56,13.68 L26.56,26.56 L13.68,26.56 C12.75264,26.56 12,27.31264 12,28.24 C12,29.16736 12.75264,29.92 13.68,29.92 L26.56,29.92 L26.56,42.8 C26.56,43.72736 27.31264,44.48 28.24,44.48 C29.16736,44.48 29.92,43.72736 29.92,42.8 L29.92,29.92 L42.8,29.92 C43.72736,29.92 44.48,29.16736 44.48,28.24 C44.48,27.31264 43.72736,26.56 42.8,26.56 L29.92,26.56 L29.92,13.68 C29.92,12.75264 29.16736,12 28.24,12 Z" id="Page-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
