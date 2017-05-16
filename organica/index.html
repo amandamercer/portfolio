@@ -1,259 +1,277 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organica Restaurant</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organica Restaurant — Fresh, local and organic food</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7CJosefin+Sans:400" rel="stylesheet">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk4BJ5t-y5SldLX8IA-7LXtgeT4b-Fy5I&callback=initMap"
+  type="text/javascript"></script>
   </head>
   <body>
 
-    <h1 class="hide">Organica Restaurant</h1>
-    <header id="mainHeader" class="row">
-      <nav class="large-12 columns">
-        <h2 class="hide">Main Navigation</h2>
-          <div class="title-bar" data-responsive-toggle="expanded-menu" data-hide-for="medium">
-            <button class="menu-icon float-right" type="button" data-toggle></button>
-          </div>
-          <div id="logoCon">
-            <div class="small-4 small-centered large-2 large-centered columns">
-              <img src="images/Organica_logo_white.png" alt="Organica Logo" id="organicaLogo">
-            </div>
-          </div>
-          <div id="expanded-menu" data-magellan>
-            <ul id="mobileNav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#aboutUs">About</a></li>
-              <li><a href="#menuSect">Menu</a></li>
-              <li><a href="#ourChefs">Chefs</a></li>
-              <li><a href="#upcomingEvents">Events</a></li>
-              <li><a href="#contactForm">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+    <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </div>
+
+    <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+      <div class="top-bar-left" data-magellan>
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li class="logo"><a href="#top"><h2>Organica</h2></a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="expanded row" id="top">
+      <div class="small-12 small-centered medium-8 medium-centered large-6 columns tagline">
+        <h3>Fresh | Local | Organic(a)</h3>
+      </div>
     </header>
 
-
-    <section class="row">
-      <h2 class="hide">Menu Item Image</h2>
-        <div class="small-12 medium-12 large-12 columns" id="headerImg">
-          <img src="images/header_img.jpg" alt="Burger" id="hambImg">
+    <section class="expanded row about" id="about">
+    <h2 class="hide">About Organica</h2>
+      <div class="row small-up-1 medium-up-1 large-up-2">
+        <div class="column column-block our-story">
+          <h4>Our Story</h4>
         </div>
+        <div class="column column-block our-story-info">
+          <p>Our mission is to change the food system that affects all of us. We believe that food is political, that the choices we make about food -- what we choose to eat and whom we choose to support by doing so -- resonate through our community, economy, and planet. At the foundation of this project is a commitment to invigorating our community, discovering the plenitude of our local foodshed, supporting sustainable agricultural practices, and working cooperatively.</p>
+        </div>
+        <div class="column column-block our-food">
+          <h4>Our Food</h4>
+        </div>
+        <div class="column column-block our-food-info">
+          <p>We source organic food first and go local whenever possible. It’s our mission to advocate for and support our local small-scale organic farmers and producers -- those tenacious, hard-working and innovative folks at the heart of our local food system. The bulk of our food sourcing happens through On The Move Organics (you can order from them too! Check out onthemoveorganics.ca). We’ll keep this list updated with our farmer and producer partners.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="row">
-      <h2 class="hide">About Us</h2>
-        <div class="small-12 medium-6 large-6 columns" id="aboutUs">
-          <img src="images/our_story_mobile.jpg" alt="Our Story" id="storyImg">
-        </div>
-        <div class="small-12 medium-6 large-6 columns" id="storyText">
-          <p>Our mission is to change the food system that affects all of us. Food is political, the choices we make about food resonate through our community, economy, and planet.</p>
-        </div>
-        <div class="small-12 medium-6 large-6 columns" id="aboutFood">
-          <img src="images/our_food_mobile.jpg" alt="Our Food" id="foodImg">
-        </div>
-        <div class="small-12 medium-6 large-6 columns" id="foodText">
-          <p>We source organic food first and go local whenever possible. It’s our mission to advocate for and support London’s small-scale organic farmers and producers.</p>
-        </div>
-    </section>
-
-    <section class="row" id="menuSect">
-      <div class="small-12 medium-12 large-12 columns">
-        <h2 id="menuTitle">Menu</h2>
-          <p>Organica offers gourmet, gluten & sugar free, vegan dishes to invigorate & cleanse your body, mind & soul! Our top chefs have prepared beautiful and complex dishes to meet anyones palate. Our food is created for people who care about what they eat. It is clean and satisfying. For us, healthy means simple, fresh ingredients that are high in nutritional value. Our menu supports a balanced diet with lots of veggies, lean meats and fish, whole intact grains and heart-healthy nuts and fats. Click through our tabs below to see some of our menu options.</p>
-      </div>
-      <div class="small-12 medium-12 large-12 columns" id="menuIcons">
-        <p class="menuItems">New Menu Additions  -</p> <img src="images/new_icon.png" alt="New Icon" id="newIcon"><br>
-        <p class="menuItems">Gluten Free Menu Items  -</p> <img src="images/gf_icon.png" alt="Gluten Free" id="gfIcon">
-      </div>
-      <div class="small-12 medium-12 large-12 columns" id="menuBigContainer">
-        <ul class="tabs" data-tabs id="example-tabs">
-          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Drinks</a></li>
-          <li class="tabs-title"><a href="#panel2">Appetizers</a></li>
-          <li class="tabs-title"><a href="#panel3">Soups & Salads</a></li>
-          <li class="tabs-title"><a href="#panel4">Entrees</a></li>
-          <li class="tabs-title"><a href="#panel5">Desserts</a></li>
+    <section class="expanded row food-menu" id="menu">
+    <div class="overlay">
+    <h2 class="hide">Our Menu</h2>
+      <div class="small-12 small-centered medium-8 large-6 columns menu-info">
+        <h4>Menu</h4>
+        <p>Organica offers gourmet, gluten & sugar free, vegan dishes to invigorate & cleanse your body, mind & soul! Our top chefs have prepared beautiful and complex dishes to meet anyones palate. Our food is created for people who care about what they eat. It is clean and satisfying. For us, healthy means simple, fresh ingredients that are high in nutritional value. Our menu supports a balanced diet with lots of veggies, lean meats and fish, whole intact grains and heart-healthy nuts and fats. Click through our tabs below to see some of our menu options.</p>
+        <ul class="icons">
+          <li><img src="images/new-icon.svg" alt="New"> New menu additions</li>
+          <li><img src="images/gluten-icon.svg" alt="Gluten Free"> Gluten free</li>
         </ul>
-        <div class="tabs-content" data-tabs-content="example-tabs">
-        <div class="tabs-panel is-active menuItems" id="panel1">
-          <div class="menuCont">
-            <img src="images/apple_orange.jpg" alt="Juice" id="appOrng">
-            <h3>Apple & Orange Juice</h3>
-            <p>Fresh homemade apple juice. Freshly squeezed orange juice.</p>
-          </div>
-          <div class="menuCont">
-            <img src="images/cappuccino.jpg" alt="Cappuccino" id="capp">
-            <h3>Cappuccino</h3>
-            <p>Steaming hot cappuccino made with freshly ground, organic coffee beans.</p>
-          </div>
-          <div class="menuCont">
-            <img src="images/mojito.jpg" alt="Mojito" id="mojito">
-            <h3>Mojito</h3>
-            <p>Refreshing Mojito made with fresh organic mint leaves.</p>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panel2">
-          <div class="menuCont">
-            <img src="images/calamari.jpg" alt="Calamari" id="calamari">
-            <h3>Calamari</h3>
-            <p>Hand-rolled and deep fried calamari. Served with a house-made sweet chili dipping sauce and dressed greens.</p>
-          </div>
-          <div class="menuCont">
-            <img src="images/panini_bread.jpg" alt="Bread" id="bread">
-            <h3>Panini Bread & Hummus</h3>
-            <p>Oven-baked flatbread topped with seasonal ingredients and your choice of cheese or Daiya. </p>
-          </div>
-          <div class="menuCont">
-            <img src="images/mushrooms.jpg" alt="Mushrooms" id="mushrooms">
-            <h3>Mushrooms</h3>
-            <p>Mushrooms topped with vegan miso gravy and Monforte sheep cheese curds. Ask for it vegan with Daiya.</p>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panel3">
-          <div class="menuCont">
-            <img src="images/fresh_bread.jpg" alt="Bread and Soup" id="soup">
-            <h3>Squash Curry Soup</h3>
-            <p>Roasted butternut squash & potato soup with mild curry seasoning and house-made cashew milk. Served with fresh bread.</p>
-          </div>
-          <div class="menuCont">
-            <img src="images/garden_salad.jpg" alt="Salad" id="salad">
-            <h3>Kale Caesar Salad</h3>
-            <p>Tender kale, house-made vegan cashew parmesan, vegan garlic Caesar dressing, croutons.</p>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panel4">
-          <div class="menuCont">
-            <img src="images/chicken_tacos.jpg" alt="Tacos" id="tacos">
-            <h3>Organic Chicken Tacos</h3>
-            <p>Three oven-baked tortillas filled with organic seasoned chicken and seasonal toppings.</p>
-          </div>
-          <div class="menuCont">
-            <img src="images/duck_roast.jpg" alt="Duck" id="duck">
-            <h3>Duck Roast</h3>
-            <p>Organic duck covered in a rich mushroom sauce with onions, garlic & thyme. Topped with balsamic dressed greens, sprouts & vegan cashew parmesan.</p>
-          </div>
-          <div class="menuCont">
-            <img src="images/tomato_pasta.jpg" alt="Pasta" id="pasta">
-            <h3>Roasted Butternut Pasta</h3>
-            <p>Five house-made tortellini stuffed with roasted butternut squash & goat's cheese. Topped with balsamic dressed greens & parmesan. </p>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panel5">
-          <div class="menuCont">
-            <img src="images/macaroons.jpg" alt="Macaroons" id="macaroons">
-            <h3>Macaroons</h3>
-            <p>Made with fair trade cocoa, coconut milk, roasted cashews and smoked sea salt.</p>
+        <div class="small-12 small-centered large-12 columns menu-tabs">
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Drinks</a></li>
+            <li class="tabs-title"><a href="#panel2">Appetizers</a></li>
+            <li class="tabs-title"><a href="#panel3">Entr&#233;es</a></li>
+            <li class="tabs-title"><a href="#panel4">Desserts</a></li>
+          </ul>
+          <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+              <ul>
+                <li>
+                  <h6>Drip Coffee</h6>
+                  <p>$2.00</p>
+                </li>
+                <li>
+                  <h6>Beetnik Latte</h6>
+                  <p>$4.25</p>
+                </li>
+                <li>
+                  <h6>Matcha Tea</h6>
+                  <p>$2.00</p>
+                </li>
+                <li>
+                  <h6>Emerald City Smoothie</h6>
+                  <p>Spinach, kale, banana, pear, hemp hearts, almond milk.</p>
+                  <p>$7.00</p>
+                </li>
+                <li>
+                  <h6>Morning Glory Smoothie</h6>
+                  <p>Seasonal fruit, banana, cinnamon & house-made cashew milk.</p>
+                  <p>$7.00</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel2">
+              <ul>
+                <li>
+                  <h6>Feature Poutine <img src="images/gluten-icon.svg" alt="Gluten Free"> <img src="images/new-icon.svg" alt="New Item"></h6>
+                  <p>Pulled pork, roasted duck jus, artisanal cheese curds, grainy mustard aioli.</p>
+                  <p>$16.95</p>
+                </li>
+                <li>
+                  <h6>Feature Soup <img src="images/gluten-icon.svg" alt="Gluten Free"></h6>
+                  <p>Fresh, seasonal ingredients.</p>
+                  <p>$7.95</p>
+                </li>
+                <li>
+                  <h6>Beet & Goat's Cheese Salad Bowl <img src="images/gluten-icon.svg" alt="Gluten Free"></h6>
+                  <p>Roasted beets, chevre, greens, sprouts, carrot, red cabbage, sunflower seeds, chia seeds, maple Dijon vinaigrette.</p>
+                  <p>$13.95</p>
+                </li>
+                <li>
+                  <h6>Garlic and Chili Marinated Olives <img src="images/gluten-icon.svg" alt="Gluten Free"> <img src="images/new-icon.svg" alt="New Item"></h6>
+                  <p>Mammoth green olives. Warmed and marinated in olive oil, garlic & chili flakes.</p>
+                  <p>$6.95</p>
+                </li>
+                <li>
+                  <h6>Mushrooms on Toast</h6>
+                  <p>Whitecrest mushrooms on toasted Arva sour dough, shaved Gouda, white truffle oil.</p>
+                  <p>$12.95</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel3">
+              <ul>
+                <li>
+                  <h6>Dragon Bowl <img src="images/gluten-icon.svg" alt="Gluten Free"> <img src="images/new-icon.svg" alt="New Item"></h6>
+                  <p>Green lentils, turmeric rice, cabbage, carrot, braised mushrooms, spiced chickpeas, sesame seeds, greens & kimchi, served with 2 spicy marinated tofu skewers & house-made toasted sesame sauce.</p>
+                  <p>$18.85</p>
+                </li>
+                <li>
+                  <h6>Passmore Farms Braised Beef</h6>
+                  <p>7oz seared+braised beef steak, squash pancake, crispy onion, beer jus.</p>
+                  <p>$24.95</p>
+                </li>
+                <li>
+                  <h6>Wild Caught Manitoulin Whitefish <img src="images/gluten-icon.svg" alt="Gluten Free"></h6>
+                  <p>Sustainably-caught Lake Huron whitefish filet. Steamed and served with a potato cake, house-made Kimchi, bacon (or grilled tempeh), and Gingerich Farms poached egg.</p>
+                  <p>$19.95</p>
+                </li>
+                <li>
+                  <h6>Potato Gnocchi <img src="images/new-icon.svg" alt="New Item"></h6>
+                  <p>House-made gnocchi in a tomato basil sauce. Topped with aged and smoked gouda.</p>
+                  <p>$16.95</p>
+                </li>
+                <li>
+                  <h6>Burger and Side</h6>
+                  <p>Choose our Root Cellar Veggie Burger or our Local Water Buffalo Burger and your choice of side. Burger can be served on an Artisan Bakery multigrain bun or a bed of greens.</p>
+                  <p>$18.95</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel4">
+              <ul>
+                <li>
+                  <h6>Dark Chocolate & Cardamom Mousse <img src="images/gluten-icon.svg" alt="Gluten Free"></h6>
+                  <p>Made with fair trade cocoa, coconut milk, roasted cashews and smoked sea salt.</p>
+                  <p>$6.95</p>
+                </li>
+                <li>
+                  <h6>Beet & Carrot Cake</h6>
+                  <p>Beet and carrot cake with fair trade chocolate crumbles and sweet goat's cheese icing.</p>
+                  <p>$6.95</p>
+                </li>
+                <li>
+                  <h6>Seasonal Bread Pudding <img src="images/new-icon.svg" alt="New Item"></h6>
+                  <p>House-made bread pudding with seasonal ingredients. Served with caramel sauce and whipped cream.</p>
+                  <p>$6.95</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    </section>
+
+    <section class="expanded row chefs" id="chefs">
+    <h2 class="hide">Our Chefs</h2>
+      <div class="row small-up-1 medium-up-3 large-up-3 chefs-info">
+        <h4>Our Chefs</h4>
+        <div class="column column-block">
+          <img src="images/chef-1.jpg" alt="Chef One">
+          <h5>Chef Michael Allemeier</h5>
+          <p>Chef Allemeier has received several honors such as the Silver Medal at the Quebec Culinary Show and a Bronze medal at the Montreal Culinary show. He is a true epicurean and loves to treat his friends to his new creations to get their feedback before introducing them on the hotel menus. His culinary philosophy and passion reflect the current trend towards a healthier and naturally nutritional diet. Working with neighboring farmers to seek out the finest in regional and local organic produce, is the essence of his cuisine.</p>
+        </div>
+        <div class="column column-block diff-background">
+          <img src="images/chef-2.jpg" alt="Chef Two">
+          <h5>Chef Maria Marte</h5>
+          <p>Chef Marte's deep appreciation for continental cuisine was developed at a young age growing up in Madrid, Spain where she was exposed to a variety of foods that would fuel her life long passion for cooking. She began her culinary career at the age of 16 working in the shuck room at the well known beachfront restaurant "Snack Jack's" in Flagler Beach. At age 18 Maria moved to Tallahassee and trained under acclaimed chef Rick Rothwell at the prestigious University Center Alumni Club, working and studying the nuances of both French and Classic American cuisine.</p>
+        </div>
+        <div class="column column-block">
+          <img src="images/chef-3.jpg" alt="Chef Three">
+          <h5>Chef Jason Mina</h5>
+          <p>With 28 years of professional cooking Chef Mina posseses the passion, world experience, and culinary expertise to provide impeccable service and 5 star culinary creations to satisfy your every food and taste desire. While proficient in a variety of cuisines and modern cooking techniques he also has the sensitivity to create custom menus in accordance with your lifestyle and eating habits, while meeting all your dietary considerations.</p>
+        </div>
       </div>
     </section>
 
-    <section class="row" id="ourChefs">
-      <h2>Our Chefs</h2>
-        <div class="small-12 medium-4 large-4 columns allmina">
-          <img src="images/ChefProfile-MichaelAllemeier.jpg" alt="Michael Allemeier" id="allemeierImg">
-          <h3>Chef Michael Allemeier</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="small-12 medium-4 large-4 columns maria">
-          <img src="images/maria-Marte-Journey-to-the-top.jpg" alt="Maria Marte" id="mariaImg">
-          <h3>Chef Maria Marte</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="small-12 medium-4 large-4 columns allmina">
-          <img src="images/Michael_Mina_Profile.jpg" alt="Michael Mina" id="minaImg">
-          <h3>Chef Michael Mina</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
-
-    <section class="row" id="eventsSect">
-      <h2 class="hide">Upcoming Events</h2>
-      <div class="small-12 medium-12 large-12 columns" id="upcomingEvents">
-        <img src="images/restaurant-large.jpg" alt="Restaurant Front" id="restImg">
+    <section class="expanded row events" id="events">
+    <h2 class="hide">Upcoming Events</h2>
+      <div class="small-12 small-centered medium-12 large-12 columns events-img">
+        <h3>Upcoming Events</h3>
       </div>
-      <div class="small-6 small-centered medium-4 large-4 columns" id="logoDiv">
-        <img src="images/Organica_logo_green.png" alt="Logo" id="greenLogo">
-      </div>
-      <div class="small-12 small-centered medium-7 large-7 columns">
-        <h3>Valentine's Day</h3>
-        <h4>February 14th, 2016</h4>
-        <p>Come spend the evening in one of London’s finest resturants with the person you love. Enjoy a romantic candlelight dinner and a complimentary rose with your meal. Call to make reservations.</p>
-        <br>
-        <h3>Free Cooking Session</h3>
-        <h4>March 16th, 2016</h4>
-        <p>Organica invites you and your friends to participate in our free cooking session, where you will learn how to prepare some of the dishes found on our menu. You will have the opportunity to cook with one of our award winning chefs and have the ultimate culinary experience.</p>
+      <div class="small-12 large-12 columns events-list">
+        <div class="small-12 small-centered medium-8 large-6 columns">
+          <h5>Valentine's Day</h5>
+          <p>February 14th, 2016<br><br>Come spend the evening in London’s finest resturants with the person you love. Enjoy a romantic candlelight dinner and a complimentary rose with your meal. Call to make reservations.</p>
+          <div class="line"></div>
+          <h5>Free Cooking Session</h5>
+          <p>March 16, 2016<br><br>Organica invites you and your friends to participate in our FREE COOKING SESSION, whereyou will learn how to prepare some of the dishes found on our menu. You have the opportunity to cook with one of our award winning chefs and have the unltimate culinary experience. </p>
+        </div>
       </div>
     </section>
 
-    <section class="row" id="contactForm">
-        <div class="small-12 medium-12 large-12 columns" id="formDiv">
-        <h2>Contact Us</h2>
-        <div class="small-12 medium-12 large-12 columns"><p>Please feel free to contact us with any questions or concerns. Fill in the form below.</p></div>
-        <div class="small-12 medium-12 large-12 columns" id="conForm">
-            <form class="formoid-metro-cyan" method="post">
-            <div class="element-name"><label class="title">Name</label><span class="nameFirst"><input  type="text" size="8" name="name[first]" /></span></div>
-            <div class="element-email"><label class="title">Email</label><input class="large" type="email" name="email" value="" /></div>
-            <label class="comment">Comment</label><textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Add comments here.</textarea>
-            <div class="submit"><input type="submit" value="Submit"/></div></form>
-        </div>
+    <section class="expanded row contact" id="contact">
+      <div class="map-wrapper"></div>
+      <h2 class="hide">Contact Us</h2>
+        <div class="small-12 small-centered medium-8 large-6 columns contact-form">
+          <h3>Contact Us</h3>
+          <p>Please feel free to contact us with any questions or concerns by filling out the form below.</p>
+          <form>
+            <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>First Name:</label>
+                <input type="text" name="fname">
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Last Name:</label>
+                <input type="text" name="lname">
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Email:</label>
+                <input type="email" name="email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+              <input type="submit" value="Send" class="button">
+              </div>
+            </div>
+          </form>
         </div>
     </section>
 
-    <footer class="row">
-      <h2 class="hide">Footer</h2>
-      <div class="small-12 medium-12 large-12 columns" id="socialMed">
-        <ul id="iconNav">
-          <li id="googleplus"><a href="http://www.googleplus.com"></a></li>
-          <li id="facebook"><a href="http://www.facebook.com"></a></li>
-          <li id="twitter"><a href="http://www.twitter.com"></a></li>
-          <li id="instagram"><a href="http://www.instagram.com"></a></li>
-        </ul>
-      </div>
-      <div class="small-12 medium-12 large-12 columns" id="footerInfo">
-        <p>519-123-1234   |   123 Fake St.<br>Eat clean and green. Eat Organic.</p>
-      </div>
+    <footer class="expanded row">
+        <div class="small-12 large-12 columns footer-social">
+          <a href="http://facebook.com" target="_blank"><object data="images/facebook.svg" type="image/svg+xml"></object></a>
+          <a href="http://googleplus.com" target="_blank"><object data="images/google.svg" type="image/svg+xml"></object></a>
+          <a href="http://linkedin.com" target="_blank"><object data="images/linkedin.svg" type="image/svg+xml"></object></a>
+          <a href="http://twitter.com" target="_blank"><object data="images/twitter.svg" type="image/svg+xml"></object></a>
+          <a href="http://pinterest.com" target="_blank"><object data="images/pinterest.svg" type="image/svg+xml"></object></a>
+        </div>
+        <div class="small-12 large-12 columns copyright">
+          <h5>Organica</h5>
+          <p>519-492-1934 | 829 Bay St. Toronto, ON. Canada J3G 5S2</p>
+        </div>
     </footer>
 
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
